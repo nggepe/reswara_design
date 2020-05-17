@@ -11,12 +11,19 @@
 
 <body>
 	<div class="main-top">
-		<button class="openbtn" onclick="">☰</button>
+		
 		<button class="nav-search" onclick="">button</button>
 	</div>
-	<div id="mySidebar" class="sidebar">
+	<div class="sidebar">
 		<img class="sidebar-img-1" src="./img/200x100.png">
 		<img class="sidebar-img-2" src="./img/400x400.png">
+
+		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
+		<div class="sidebar-avatar col-md-12">
+			<img class="imground50" src="./img/avatar/user.png" style="width: 100%;">
+		</div>
+		<div class="col-md-12 imgbg">
+		</div>
 		<p>Menu</p>
 		<ul>
 			<li>
@@ -24,24 +31,38 @@
 			</li>
 			<li>
 				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-book"></i> <span>Forms</span></a>
-				<ul>
+				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-book"></i> <span>Forms</span></a>
-				<ul>
+				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 		</ul>
 	</div>
+	<div class="main-content">
+		<div class="btn-group">
+		  	<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	Action
+		  	</button>
+		  	<div class="dropdown-menu">
+		    	<a class="dropdown-item" href="#">Action</a>
+		    	<a class="dropdown-item" href="#">Another action</a>
+		    	<a class="dropdown-item" href="#">Something else here</a>
+		    	<div class="dropdown-divider"></div>
+		    	<a class="dropdown-item" href="#">Separated link</a>
+		  	</div>
+		</div>
+	</div>
+
 </body>
 <footer>
 	<script src="./jquery/jquery-3.3.1.min.js"></script>
-	<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/reswara.js"></script>
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>

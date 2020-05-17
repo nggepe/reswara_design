@@ -1,10 +1,10 @@
 body {
 	
 }
-/*SIDE BAR SHOW DISINI*/
+/*SIDE BAR*/
 .sidebar {
 	height: 100%;
-	width: 250px;
+	width: 60px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -36,14 +36,17 @@ body {
 	display: block;
 	transition: 0.3s;
 	background-color: #2b2b2b;
-	border-radius: 10px 40px 40px 10px;
-	box-shadow: 1px 1px black;
-	margin-bottom: 10px;
+	
 }
 
 .sidebar a:hover {
 	background-color: #2f2f2f;
 	border-radius: 10px 40px 40px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  	.sidebar {padding-top: 15px;}
+  	.sidebar a {font-size: 18px;}
 }
 
 .sidebar span {
@@ -65,13 +68,13 @@ body {
 .sidebar p {
 	margin-left: 0px;
 	padding-left: 20px;
-	margin-bottom: 10px;
 	color: #88708c;
 	font-size: 12px;
 	background-color: #2b2b2b;
 	border-radius: 0px 90px 90px 0px;
-	box-shadow: 1px 1px black;
 	width: auto;
+	margin-bottom: -10px;
+	padding-bottom: 15px;
 }
 
 .sidebar .sidebar-img-1 {
@@ -110,11 +113,11 @@ body {
     font-size: 12px;
     transition: all .5s;
 }
+
+
 .sidebar-dropdown.hidden::after{
     display: none;
 }
-
-
 
 .sidebar-dropdown.active::after{
 	content: "";
@@ -138,17 +141,9 @@ body {
 	width: 20px;
 }
 
-/*SHOW SIDE BAR END HERE*/
-/*HIDE SIDE BAR*/
-
-
 .sidebar-dropdown-item{
 	display: none;
 	margin-left: 40px;
-}
-
-.sidebar-link.mini{
-	
 }
 
 .sidebar-dropdown-item.active{
@@ -161,6 +156,10 @@ body {
 	border-radius: 10px 40px 40px 10px;
 }
 
+/*END OF SIDE BAR*/
+
+
+/*TOP NAVIGATION*/
 .openbtn {
 	margin-left: 0px;
 	font-size: 20px;
@@ -182,11 +181,13 @@ body {
 	border: none;
 }
 
+
+
 .main-top {
 	transition: margin-left .5s;
 	background-color: #4d4d4d;
 	padding: 16px;
-	margin-left: 250px;
+	margin-left: 60px;
 }
 
 @media screen and (max-height: 700px) {
@@ -197,9 +198,37 @@ body {
 		margin-left: 0px;
 	}
 }
+/*end top navigation*/
 
+/*main-content*/
+.main-content{
+	transition: 0.5s;
+}
+.imgbg{
+	background-color: #2b2b2b;
+	height: 20px;
+	margin-top: -20px;
+	z-index: -1;
+}
 
-@media screen and (max-height: 450px) {
-  	.sidebar {padding-top: 15px;}
-  	.sidebar a {font-size: 18px;}
+.imground50{
+	border:5px solid;
+	border-radius: 50%;
+	border-color: #2b2b2b;
+}
+
+.sidebar-avatar {
+	text-align: center;
+	position: relative;
+}
+.sidebar-avatar img{
+	max-width: 60px;
+}
+
+.bio-sidebar{
+	color: #88708c;
+}
+.bio-sidebar.hidden{
+	visibility: hidden;
+	display: none;
 }

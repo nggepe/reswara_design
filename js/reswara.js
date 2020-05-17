@@ -8,7 +8,7 @@ function navStart(xmedia){
 		nav_started('close');
 	}
 	else{
-		nav_started('open');
+		nav_started('close');
 	}
 }
 
@@ -24,14 +24,22 @@ $(document).ready(function(){
 $(document).mouseup(function(e) 
 {
     var container = $(".sidebar");
-
-    // if the target of the click isn't the container nor a descendant of the container
     if (!container.is(e.target) && container.has(e.target).length === 0) 
     {
-        if (xmedia.matches) {
+        // if (xmedia.matches) {
         	nav_started('close');
-        }
+        // }
     }
+});
+
+$(".sidebar").mousemove(function(e) 
+{
+    nav_started('open');
+});
+
+$(".sidebar").mouseleave(function(e) 
+{
+    nav_started('close');
 });
 
 $(".openbtn").click(
@@ -62,9 +70,14 @@ $(".sidebar-link").click(function(){
 
 function nav_started(btnstat){
 	if (btnstat=="open") {
-		$('.sidebar').attr('style', 'width:250px;');
-		main[0].style.marginLeft = "250px";
+		
 		btnstat_ = 'close';
+		
+
+		$('.sidebar').attr('style', 'width:250px;');
+		$('.bio-sidebar').removeClass('hidden');
+		main[0].style.marginLeft = "250px";
+		$('.main-content').attr('style','margin-left: 280px; margin-top: 20px;');
 		$('.sidebar').find( "span" ).show();
 		$('.sidebar').find( "p" ).show();
 		$('.sidebar-img-1').show();
@@ -73,25 +86,32 @@ function nav_started(btnstat){
 		$('.sidebar').attr('align', 'left');
 		$('.sidebar').removeClass('mini-side-bar');
 		$('.sidebar-dropdown').removeClass('hidden');
+		$('.sidebar').find('.sidebar-dropdown.active').next().children().slideDown('200').addClass("active");
 	}
 	else{
 		
 		btnstat_ = 'open';
 		$('.sidebar').find( "span" ).hide();
+		$('.bio-sidebar').addClass('hidden');
+
 		$('.sidebar').find( "p" ).hide();
 		$('.sidebar-img-2').show();
 		$('.sidebar-img-1').hide();
 		$('.sidebar').attr('align', 'center');
 		$('.sidebar').addClass('mini-side-bar');
 		$('.sidebar-dropdown').addClass('hidden');
+		$(".sidebar-dropdown-item").slideUp('200').removeClass("active");
 		if (xmedia.matches) {
 			$('.sidebar').attr('style', 'width:0px;');
 			main[0].style.marginLeft= "0px";
+			$('.main-content').attr('style','margin-left: 30px; margin-top: 20px;');
 		}
 		else{
 			$('.sidebar').attr('style', 'width:60px;');
 			$('.sidebar-link').addClass('mini');
+			
 			main[0].style.marginLeft= "60px";
+			$('.main-content').attr('style','margin-left: 90px; margin-top: 20px;');
 		}
 	}
 }
