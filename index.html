@@ -16,22 +16,16 @@
 	<div class="main-top">
 		<a class="active" href="#home"><button class="openbtn" onclick="">☰</button></a>
 		<div class="topnav-right">
-			<a class="nav-content nav-notif">
-				<i class="fa fa-bell"></i>
-				<ul class="nav-details nav-notif-details">
-					<li><a href="#" class="text-left"><i class="fa fa-user"></i> Profile</a></li>
-					<li><a href="#" class="text-left"><i class="fa fa-cogs"></i> Setting</a></li>
-				</ul>
-			</a>
-			<a class="nav-content nav-profile">
-				<img class="nav-profile-img" src="./img/avatar/user.png">
-				<span>Suryanto!</span>
-				<div class="nav-details nav-profile-details">
-					<li><a href="#" class="text-left"><i class="fa fa-user"></i> Profile</a></li>
-					<li><a href="#" class="text-left"><i class="fa fa-cogs"></i> Setting</a></li>
-				</div>
-			</a>
-			
+			<div class="btn-group">
+			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    	<img class="nav-profile-img" src="./img/avatar/user.png"> <span>Suryanto</span>
+			  	</a>
+			  	<div class="dropdown-menu nav-details">
+			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
+			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Setting</a>
+			  	</div>
+			</div>
 		</div>
 		
 	</div>
@@ -71,11 +65,11 @@
 		  	<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	Action
 		  	</button>
-		  	<div class="dropdown-menu">
+		  	<div class="dropdown-menu nav-details">
 		    	<a class="dropdown-item" href="#">Action</a>
 		    	<a class="dropdown-item" href="#">Another action</a>
 		    	<a class="dropdown-item" href="#">Something else here</a>
-		    	<div class="dropdown-divider"></div>
+		    	<!-- <div class="dropdown-divider"></div> -->
 		    	<a class="dropdown-item" href="#">Separated link</a>
 		  	</div>
 		</div>
@@ -85,9 +79,12 @@
 <footer>
 
 	<script src="./jquery/jquery-3.3.1.min.js"></script>
-	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 	<script src="./js/bootstrap.min.js"></script>
+	
+
 	<script src="./js/reswara.js"></script>
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 </footer>
