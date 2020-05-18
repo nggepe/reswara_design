@@ -206,6 +206,8 @@ body {
 	padding: 10px 15px;
 	background-color: #2b2b2b;
 	border: none;
+	height: 60px;
+	display: inline-block;
 
 } @media only screen and (max-width: 700px) {
 	.openbtn{
@@ -277,6 +279,11 @@ body {
 	border-radius: 10px 10px 10px 10px;
 }
 
+.nav-details a:hover{
+	background-color: #2b2b2b;
+	color: white;
+}
+
 .nav-profile-details{
 	display: none;
 }
@@ -323,3 +330,149 @@ body {
 .main-content{
 	transition: 0.5s;
 }
+/*main-content*/
+
+/*accent*/
+.accent{
+	height: auto;
+	font-size: 30px;
+	color: #b190bb;
+	padding-top: 40px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	border-radius: 10px;
+}
+
+.accent-inner{
+	font-size: 14px;
+	background-color: #333333;
+	color: #b190bb !important;
+	
+	margin-left: 0px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-left: 15px;
+	border-radius: 5px 5px 0px 0px;
+
+	display: inline-block;
+	max-width: 230px;
+
+	border: none !important;
+    outline:none !important;
+}
+
+.glowing{
+	box-shadow: 2px 1px 20px #b190bb;
+}
+/*accent*/
+
+
+/*bg style*/
+.bg-accent{
+	background-color: #2b2b2b!important;
+}
+/*bg styling*/
+
+/*color-styling*/
+.c-info{
+	color: #03a9f4 !important;
+}
+
+.c-danger{
+	color: #f44336 !important;
+}
+
+.c-warning{
+	color: #ff9800 !important;
+}
+
+.c-default{
+	color: #6f8679 !important;
+}
+/*color-styling end*/
+
+/*task-style*/
+.task{
+	margin-top: 20px;
+}
+
+.task .front{
+	background-color: #2b2b2b;
+	color: #b190bb;
+}
+.task .back{
+	background-color: #2b2b2b;
+	padding: 10px;
+	color: #b190bb;
+}
+
+.task-header{
+	padding: 10px 10px 10px 10px;
+	border-bottom: 1px solid #736f6f;
+}
+
+.task-content{
+	background-color: #2b2b2b;
+	padding: 2px 10px 20px 10px;
+}
+
+.task-content span{
+	font-size: 80px;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.task-footer{
+	background-color: #2b2b2b;
+	padding: 2px 10px 10px 10px;
+	border-top: 1px solid #736f6f ;
+}
+/**/
+
+
+/*animate*/
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+/*animate end*/
