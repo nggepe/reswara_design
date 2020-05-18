@@ -6,26 +6,33 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/reswara.css">
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
 
 <body>
-	<div class="main-top row">
-		<div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-			<button class="openbtn" onclick="">☰</button>
-		</div>
-		<div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right nav-right">
-			<div class="nav-profile">
-				<img class="nav-profile-img" src="./img/avatar/user.png">
-				<span>Suryanto!</span>
-				<ul class="nav-profile-details">
+	<div class="main-top">
+		<a class="active" href="#home"><button class="openbtn" onclick="">☰</button></a>
+		<div class="topnav-right">
+			<a class="nav-content nav-notif">
+				<i class="fa fa-bell"></i>
+				<ul class="nav-details nav-notif-details">
 					<li><a href="#" class="text-left"><i class="fa fa-user"></i> Profile</a></li>
 					<li><a href="#" class="text-left"><i class="fa fa-cogs"></i> Setting</a></li>
 				</ul>
-			</div>
+			</a>
+			<a class="nav-content nav-profile">
+				<img class="nav-profile-img" src="./img/avatar/user.png">
+				<span>Suryanto!</span>
+				<div class="nav-details nav-profile-details">
+					<li><a href="#" class="text-left"><i class="fa fa-user"></i> Profile</a></li>
+					<li><a href="#" class="text-left"><i class="fa fa-cogs"></i> Setting</a></li>
+				</div>
+			</a>
 			
 		</div>
-		
 		
 	</div>
 	<div class="sidebar">
@@ -76,7 +83,10 @@
 
 </body>
 <footer>
+
 	<script src="./jquery/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+	
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/reswara.js"></script>
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>

@@ -76,6 +76,15 @@ $(".nav-profile").click(function(e){
 	}
 });
 
+$(".nav-notif").click(function(e){
+	if ($(".nav-notif-details").hasClass('show')) {
+		$(".nav-notif-details").removeClass('show');
+	}
+	else{
+		$(".nav-notif-details").addClass('show');
+	}
+});
+
 $(".sidebar-link").click(function(){
 
 	if ($(this).hasClass('active')) {
