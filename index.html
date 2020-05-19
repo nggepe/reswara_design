@@ -55,12 +55,16 @@
 		<p>Menu</p>
 		<ul>
 			<li>
-				<a href="#" class="sidebar-link"><i class="fas fa-tv"></i> <span>Dashboard</span></a>
+				<a href="#" class="sidebar-link sidebar-dropdown active"><i class="fas fa-tv"></i> <span>Dashboard</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
+					<li class="sidebar-dropdown-item active"><a href="#">Glowing project</a></li>
+				</ul>
 			</li>
 			<li>
-				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-book"></i> <span>Forms</span></a>
+				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-th-large"></i> <span>Component</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
+					<li class="sidebar-dropdown-item"><a href="./pages/hero.html">Hero</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
@@ -76,7 +80,7 @@
 	<div class="main-content row">
 		<div class="col-md-9 row">
 			<div class="col-md-12">
-				<div class="accent bg-accent">
+				<div class="accent bg-lightblue glowing">
 					<h3>Hello, Suryanto!</h3>
 					<div class="dropdown">
 						<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
@@ -106,7 +110,7 @@
 				    <div class="back">
 				        <div class="task-header">Information</div>
 				        <div class="task-content text-center">
-				        	<p>You can write some detail information here</p>
+				        	<p>You can write some detail information here.</p>
 				        </div>
 				        <div class="task-footer text-center">
 				        	<small>Today</small>
@@ -185,26 +189,19 @@
 			</div>
 		</div>
 		<div class="col-md-3">
-			<div class="task"> 
-			    <div class="front">
-			        <div class="task-header">Today</div>
-			        <div class="task-content text-center">
-			        	<span class="c-info count">21</span>
-			        	<small>Due task</small>
-			        </div>
-			        <div class="task-footer text-center">
-			        	<small>8 Complete</small>
-			        </div>
-			    </div> 
-			    <div class="back">
-			        <div class="task-header">Information</div>
-			        <div class="task-content text-center">
-			        	<p>You can write some detail information here</p>
-			        </div>
-			        <div class="task-footer text-center">
-			        	<small>Today</small>
-			        </div>
-			    </div> 
+			<div class="bg-lightgreen glowing">
+				<h3>Hello, Suryanto!</h3>
+				<div class="dropdown">
+					<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
+				  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
+				    	Reswara Corp. Backend APP
+				  	</div>
+				  	<div class="dropdown-menu nav-details  slideIn">
+					    <a class="dropdown-item" href="#">Link 1</a>
+					    <a class="dropdown-item" href="#">Link 2</a>
+					    <a class="dropdown-item" href="#">Link 3</a>
+				  	</div>
+				</div>
 			</div>
 		</div>
 	</div>

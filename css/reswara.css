@@ -334,9 +334,10 @@ body {
 
 /*accent*/
 .accent{
+
 	height: auto;
 	font-size: 30px;
-	color: #b190bb;
+	color: #774c84;
 	padding-top: 40px;
 	padding-bottom: 0px;
 	padding-left: 20px;
@@ -345,8 +346,8 @@ body {
 
 .accent-inner{
 	font-size: 14px;
-	background-color: #333333;
-	color: #b190bb !important;
+	background-color: #00c4d4;
+	color: #5f3d69 !important;
 	
 	margin-left: 0px;
 	padding-left: 15px;
@@ -368,8 +369,19 @@ body {
 
 
 /*bg style*/
+.bg-lightblue{
+	background-color: #00e3f5!important;
+	color: #774c84!important;
+}
+
+.bg-lightgreen{
+	background-color: #00ff55;
+	color: #774c84!important;
+}
+
 .bg-accent{
-	background-color: #2b2b2b!important;
+	background-color: #333333;
+	color: #b190bb!important;
 }
 /*bg styling*/
 
