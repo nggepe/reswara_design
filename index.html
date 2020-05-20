@@ -30,10 +30,22 @@
 		<a class="active"><span class="openbtn" onclick="">☰</span></a>
 		<div class="topnav-right">
 			<div class="btn-group">
+			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  		<div>
+			    		<i class="fas fa-bell"></i>
+			  		</div>
+			  	</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details">
+			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
+			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Setting</a>
+			  	</div>
+			</div>
+			<div class="btn-group dropdown">
 			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    	<img class="nav-profile-img" src="./img/avatar/user.png"> <span>Suryanto</span>
 			  	</a>
-			  	<div class="dropdown-menu nav-details">
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details">
 			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
 			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
 			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Setting</a>
@@ -78,132 +90,152 @@
 		</ul>
 	</div>
 	<div class="main-content row">
-		<div class="col-md-9 row">
-			<div class="col-md-12">
-				<div class="accent bg-lightblue glowing">
-					<h3>Hello, Suryanto!</h3>
-					<div class="dropdown">
-						<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
-					  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
-					    	Reswara Corp. Backend APP
-					  	</div>
-					  	<div class="dropdown-menu nav-details  slideIn">
-						    <a class="dropdown-item" href="#">Link 1</a>
-						    <a class="dropdown-item" href="#">Link 2</a>
-						    <a class="dropdown-item" href="#">Link 3</a>
-					  	</div>
+			<div class="col-lg-9 row">
+				<div class="col-md-12">
+					<div class="accent bg-accent">
+						<h3>Hello, Suryanto!</h3>
+						<div class="dropdown">
+							<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
+						  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
+						    	Reswara Corp. Backend APP
+						  	</div>
+						  	<div class="dropdown-menu nav-details  slideIn">
+							    <a class="dropdown-item" href="#">Link 1</a>
+							    <a class="dropdown-item" href="#">Link 2</a>
+							    <a class="dropdown-item" href="#">Link 3</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="tab-list bg-accent-2">
+						<div class="tab-list-header">
+							<ul>
+								<li class="tab-list-item">Header</li>
+								<li class="tab-list-item">b</li>
+								<li class="tab-list-item">c</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="task"> 
+					    <div class="front">
+					        <div class="task-header">Today</div>
+					        <div class="task-content text-center">
+					        	<span class="c-info count">21</span>
+					        	<small>Due task</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>8 Complete</small>
+					        </div>
+					    </div> 
+					    <div class="back">
+					        <div class="task-header">Today</div>
+					        <div class="task-content text-center">
+					        	<span class="c-info count">21</span>
+					        	<small>Due task</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>8 Complete</small>
+					        </div>
+					    </div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="task"> 
+					    <div class="front">
+					        <div class="task-header">Overdue</div>
+					        <div class="task-content text-center">
+					        	<span class="c-danger count">4</span>
+					        	<small>Due task</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>Yesterday result</small>
+					        </div>
+					    </div> 
+					    <div class="back">
+					        <div class="task-header">Overdue</div>
+					        <div class="task-content text-center">
+					        	<span class="c-danger count">4</span>
+					        	<small>Due task</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>Yesterday result</small>
+					        </div>
+					    </div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="task"> 
+					    <div class="front">
+					        <div class="task-header">Issues</div>
+					        <div class="task-content text-center">
+					        	<span class="c-warning count">47</span>
+					        	<small>Open</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>10 Closed</small>
+					        </div>
+					    </div> 
+					    <div class="back">
+					        <div class="task-header">Issues</div>
+					        <div class="task-content text-center">
+					        	<span class="c-warning count">47</span>
+					        	<small>Open</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>10 Closed</small>
+					        </div>
+					    </div> 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="task"> 
+					    <div class="front">
+					        <div class="task-header">New Account</div>
+					        <div class="task-content text-center">
+					        	<span class="c-default count">300</span>
+					        	<small>Acount</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>8000 Active</small>
+					        </div>
+					    </div> 
+					    <div class="back">
+					        <div class="task-header">New Account</div>
+					        <div class="task-content text-center">
+					        	<span class="c-default count">300</span>
+					        	<small>Acount</small>
+					        </div>
+					        <div class="task-footer text-center">
+					        	<small>8000 Active</small>
+					        </div>
+					    </div> 
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="task"> 
-				    <div class="front">
-				        <div class="task-header">Today</div>
-				        <div class="task-content text-center">
-				        	<span class="c-info count">21</span>
-				        	<small>Due task</small>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>8 Complete</small>
-				        </div>
-				    </div> 
-				    <div class="back">
-				        <div class="task-header">Information</div>
-				        <div class="task-content text-center">
-				        	<p>You can write some detail information here.</p>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>Today</small>
-				        </div>
-				    </div> 
+			<div class="col-lg-3">
+				<div class="accent-2 bg-accent-2">
+					<div class="accent-2-header"><span class="time"></span><div class="btn-right"><i class="fa fa-ellipsis-v"></i></div></div>
+					<div class="accent-2-content text-center"><div class="month"></div><div class="date"></div><div class="year"></div></div>
+					<div class="accent-2-footer"></div>
+				</div>
+
+				<div class="accent-3 bg-accent-3">
+					<div class="accent-3-header">
+						<span><i class="fa fa-map-pin"></i></span> Banyuwangi
+						<div class="btn-right"><i class="fa fa-ellipsis-v"></i></div>
+					</div>
+					<div class="accent-3-content text-center">
+						<p><i class="fas fa-cloud"></i> <span class="count">22</span>°C<p>
+					</div>
+					<div class="accent-3-footer">
+						<div>Sunday <div class="btn-right"><i class="fas fa-sun"></i> <span class="count">29</span> °C</div></div>
+						<div>Monday <div class="btn-right"><i class="fas fa-cloud"></i> <span class="count">23</span> °C</div></div>
+						<div>Wednesday <div class="btn-right"><i class="fas fa-bolt"></i> <span class="count">21</span> °C</div></div>
+						<div>Thursday <div class="btn-right"><i class="fas fa-sun"></i> <span class="count">29</span> °C</div></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="task"> 
-				    <div class="front">
-				        <div class="task-header">Overdue</div>
-				        <div class="task-content text-center">
-				        	<span class="c-danger count">4</span>
-				        	<small>Due task</small>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>Yesterday result</small>
-				        </div>
-				    </div> 
-				    <div class="back">
-				        <div class="task-header">Information</div>
-				        <div class="task-content text-center">
-				        	<p>You can write some detail information here</p>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>Today</small>
-				        </div>
-				    </div> 
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="task"> 
-				    <div class="front">
-				        <div class="task-header">Issues</div>
-				        <div class="task-content text-center">
-				        	<span class="c-warning count">47</span>
-				        	<small>Open</small>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>10 Closed</small>
-				        </div>
-				    </div> 
-				    <div class="back">
-				        <div class="task-header">Information</div>
-				        <div class="task-content text-center">
-				        	<p>You can write some detail information here</p>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>Today</small>
-				        </div>
-				    </div> 
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="task"> 
-				    <div class="front">
-				        <div class="task-header">New Account</div>
-				        <div class="task-content text-center">
-				        	<span class="c-default count">300</span>
-				        	<small>Acount</small>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>8000 Active</small>
-				        </div>
-				    </div> 
-				    <div class="back">
-				        <div class="task-header">Information</div>
-				        <div class="task-content text-center">
-				        	<p>You can write some detail information here</p>
-				        </div>
-				        <div class="task-footer text-center">
-				        	<small>Today</small>
-				        </div>
-				    </div> 
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="bg-lightgreen glowing">
-				<h3>Hello, Suryanto!</h3>
-				<div class="dropdown">
-					<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
-				  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
-				    	Reswara Corp. Backend APP
-				  	</div>
-				  	<div class="dropdown-menu nav-details  slideIn">
-					    <a class="dropdown-item" href="#">Link 1</a>
-					    <a class="dropdown-item" href="#">Link 2</a>
-					    <a class="dropdown-item" href="#">Link 3</a>
-				  	</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 </body>
@@ -215,9 +247,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 	<script src="./js/bootstrap.min.js"></script>
-	
 
 	<script src="./js/reswara.js"></script>
+	<script src="./js/reswara-time.js"></script>
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 </footer>
 </html>
