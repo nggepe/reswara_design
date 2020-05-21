@@ -109,6 +109,12 @@ body {
 		margin-left: 50px;
 	}
 
+	.sidebar-dropdown:hover{
+		background-color: #2f2f2f;
+		border-radius: 10px 40px 40px 10px;
+		cursor: pointer;
+	}
+
 	.sidebar-dropdown::after{
 		content: "";
 		font-family: 'Font Awesome 5 Free';
@@ -501,7 +507,7 @@ body {
 
 /*task-style*/
 	.task{
-		/*margin-top: 20px;*/
+		margin-top: 20px;
 	}
 
 	.task .front{
@@ -592,12 +598,54 @@ body {
 
 /*tab list*/
 	.tab-list{
-
+		padding-top: 10px;
+		border-bottom: 1px solid #88708c;
+		padding-bottom: 0px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		
 	}
 
-	.tab-list-header ul li{
+	.tab-list-header{
+		display: flex;
+	}
+
+	.tab-list-header a{
 		list-style-type: none;
-		display: inline-block;
+
+		padding-left: 20px;
+		padding-right: 20px;
+		color: #88708c !important;
+		text-decoration: none;
+		padding-bottom: 10px;
+		white-space: nowrap;
+	}
+
+	.tab-list-header a:active{
+		color: white!important;
+		background-color: #484848;
+		border-radius: 10px 10px 0px 0px;
+		border-bottom: 4px solid #03a9f4;
+	}
+
+	.tab-list-header .active{
+		color: white!important;
+		
+		border-radius: 10px 10px 0px 0px;
+		transition: 0.5s;
+		border-bottom: 4px solid #03a9f4;
+	}
+
+	.tab-list-item{
+		padding-top: 15px;
+		cursor: pointer;
+		margin-bottom: -2px;
+		flex: 0 0 25%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+	}
+
+	.tab-list-item:hover{
+		color: white!important;
+		border-bottom: 4px solid #03a9f4;
 	}
 
 /*tab list end*/
@@ -611,3 +659,9 @@ body {
   	border: none;
   	opacity: 0.1;
 }
+
+/*floating*/
+	.float-right{
+
+	}
+/*floating end*/
