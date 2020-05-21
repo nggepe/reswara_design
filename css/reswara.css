@@ -18,7 +18,7 @@ body {
 		top: 0;
 		left: 0;
 		background-color: #333333;
-		background-image: linear-gradient(to right, #333333 , #46323e);
+		/*background-image: linear-gradient(to right, #333333 , #46323e);*/
 		overflow-x: hidden;
 		transition: 0.5s;
 		padding-top: 20px;
