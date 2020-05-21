@@ -5,6 +5,7 @@
 
 body {
 	background-color: #39313a;
+	background-image: linear-gradient(to right, #333333 , #39313a);
 	
 }
 /*SIDE BAR*/
@@ -17,6 +18,7 @@ body {
 		top: 0;
 		left: 0;
 		background-color: #333333;
+		background-image: linear-gradient(to right, #333333 , #46323e);
 		overflow-x: hidden;
 		transition: 0.5s;
 		padding-top: 20px;
@@ -112,6 +114,7 @@ body {
 	.sidebar-dropdown:hover{
 		background-color: #2f2f2f;
 		border-radius: 10px 40px 40px 10px;
+		color: #b04b87!important;
 		cursor: pointer;
 	}
 
@@ -291,7 +294,7 @@ body {
 		overflow: auto;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		list-style-type: none;
-		transition: 0.5s;
+		transition: 0.1s;
 		border-radius: 10px 10px 10px 10px;
 	}
 
@@ -474,6 +477,11 @@ body {
 	}
 
 	.bg-accent-2{
+		background-color: #373246;
+		color: white!important;
+	}
+
+	.bg-accent-2 a:hover{
 		background-color: #373246;
 		color: white!important;
 	}
