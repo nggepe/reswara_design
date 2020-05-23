@@ -43,7 +43,6 @@
 		
 	</div>
 	<div class="sidebar">
-		<img class="sidebar-img-1" src="../img/200x100.png">
 		<img class="sidebar-img-2" src="../img/400x400.png">
 
 		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
@@ -79,38 +78,7 @@
 	</div>
 	<div class="main-content row">
 		<div class="col-md-12 row">
-			<div class="col-md-12">
-				<div class="hero bg-lightblue glowing">
-					<h3>Hello, Suryanto!</h3>
-					<div class="dropdown">
-						<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
-					  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
-					    	Reswara Corp. Backend APP
-					  	</div>
-					  	<div class="dropdown-menu nav-details  slideIn">
-						    <a class="dropdown-item" href="#">Link 1</a>
-						    <a class="dropdown-item" href="#">Link 2</a>
-						    <a class="dropdown-item" href="#">Link 3</a>
-					  	</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="hero bg-lightgreen glowing">
-					<h3>Welcomeback, Suryanto!</h3>
-					<div class="dropdown">
-						<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
-					  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
-					    	Reswara Corp. Backend APP
-					  	</div>
-					  	<div class="dropdown-menu nav-details  slideIn">
-						    <a class="dropdown-item" href="#">Link 1</a>
-						    <a class="dropdown-item" href="#">Link 2</a>
-						    <a class="dropdown-item" href="#">Link 3</a>
-					  	</div>
-					</div>
-				</div>
-			</div>
+			<div class="ripple">Click Me</div>
 		</div>
 	</div>
 
@@ -132,4 +100,40 @@
 
 <script type="text/javascript">
 	
+</script>
+
+<script type="text/javascript">
+	// const button = document.querySelector(".ripple");
+
+	// function materializeEffect(event) {
+	//   const circle = document.createElement("div");
+	//   const x = event.layerX;
+	//   const y = event.layerY;
+	//   circle.classList.add("circle");
+	//   circle.style.left = `${x}px`;
+	//   circle.style.top = `${y}px`;
+	//   this.appendChild(circle);
+
+	//   console.log(event);
+	// }
+
+	// button.addEventListener("click", materializeEffect);
+
+	$(".ripple").click(function(e){
+		const circle = document.createElement("div");
+		
+		var x =  e.offsetX;
+		var y = e.offsetY;
+		circle.classList.add("circle");
+		circle.style.left = `${x}px`;
+		circle.style.top = `${y}px`;
+		$(this).append(circle);
+		el = $(this);
+
+		setTimeout(
+	        function() {
+	            console.log(el.find('div').remove());
+	        },400);
+	});
+
 </script>
