@@ -249,6 +249,19 @@ body {
 	.topnav-right {
 	  	float: right;
 	  	color: #af9fc7;
+	  	padding-right: 10px;
+	  	display: block;
+	  	height: 60px;
+	  	font-size: 22px;
+	  	position: relative;
+	  	vertical-align: middle;
+	  	padding-top: 5px
+	}
+	.topnav-right>a{
+		display: inline-flex;
+		vertical-align: middle;
+		margin-right: 15px;
+		color: #af9fc7;
 	}
 
 	.topnav-left{
@@ -260,7 +273,7 @@ body {
 
 	.group-search-navigation{
 		height: 60px;
-		vertical-align: center;
+		
 		padding-top: 12px;
 	}
 
@@ -311,7 +324,6 @@ body {
 		margin-left: 0px;
 		font-size: 20px;
 		cursor: pointer;
-		color: white;
 		padding: 10px 15px;
 		background-color: none;
 		color: #af9fc7;
@@ -363,10 +375,13 @@ body {
 		/*margin-left: 60px;*/
 		height: 60px;
 		box-shadow: 0px 0.5px 5px #2f282f;
+		color: #af9fc7;
+		
 	}
 
-	.main-notification{
-		font-size: 20px;
+	.dropdown-notif{
+		font-size: 25px;
+		
 	}
 
 	.main-notification-details{
@@ -374,9 +389,11 @@ body {
 		background-image: var(--sidebar-bg-color);
 		border-radius: 5px;
 		border: none;
+		overflow: hidden;
+		height: auto;
 	}
 	.main-notification-header{
-		padding: 6px 15px 10px 15px;
+		padding: 15px 15px 10px 15px;
 		font-size: 14px;
 		color: #af9fc7;
 		background-image: var(--sidebar-bg-color);
@@ -479,11 +496,12 @@ body {
 		padding: 0px;
 		width: 250px;
 		border-radius: 10px 10px 10px 10px;
+		overflow: hidden;
 	}
 	.nav-profile-details-header{
 		padding: 20px 20px 20px 20px;
 		background-image: var(--sidebar-bg-color-a-hover);
-		vertical-align: center;
+		
 	}
 	.nav-profile-details-header > div{
 		display: inline-block;
@@ -571,10 +589,10 @@ body {
 		display: block;
 	}
 
-
 	.nav-profile-img{
 		max-height: 30px;
 		border-radius: 50%;
+		vertical-align: initial;
 	}
 
 	.nav-notif{
@@ -1135,3 +1153,11 @@ body {
 	color: #6c757d;
 }
 /*breadcrumb end*/
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}

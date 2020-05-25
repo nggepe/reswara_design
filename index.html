@@ -4,7 +4,8 @@
 	<title></title>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./modules/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" href="./css/reswara.css">
 	
 
@@ -48,66 +49,62 @@
 		</div>
 		
 		<div class="topnav-right">
-			<div class="btn-group">
-			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  		<div class="main-notification">
-			    		<i class="ti-bell"></i>
-			  		</div>
-			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right main-notification-details">
-			    	<div class="main-notification-header">
-			    		Notification
-			    		<div class="btn-right markread">Mark all as read</div>
-			    	</div>
-			    	<div class="main-notification-content">
-			    		<a class="unread" href="#">
-			    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
-			    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
-			    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
-			    		</a>
-			    		<a class="unread" href="#">
-			    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
-			    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
-			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
-			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
-			    		</a>
-			    	</div>
-			    	<div class="main-notification-footer text-center">
-			    		<div><small>2 unread notification</small></div>
-			    		<a href="#">View all notification</a>
-			    	</div>
-			  	</div>
-			</div>
-			<div class="btn-group dropdown">
-			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    	<img class="nav-profile-img" src="./img/avatar/user.png"> <span>Suryanto</span>
-			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-profile-details">
-			  		<div class="nav-profile-details-header">
-			  			<div>
-			  				<img class="imground50" src="./img/avatar/user.png">
-			  			</div>
-			  			<div>
-				  			<span class="nav-profile-details-span-name">Suryanto</span>
-				  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
-			  			</div>
-			  		</div>
-			  		<div class="nav-profile-details-group">
-				    	<a class="dropdown-item" href="#">Profile</a>
-				    	<a class="dropdown-item" href="#">Setting</a>
-				    	<a class="dropdown-item" href="#">Logout</a>
-			  		</div>
-			  	</div>
-			</div>
+
+		  	<a class='main-notification text-center' href='#' data-target='dropdown-notif'>
+		    	<i class="ti-bell"></i>
+		  	</a>
+		  	<div id='dropdown-notif' class="dropdown-content main-notification-details">
+		    	<div class="main-notification-header">
+		    		Notification
+		    		<div class="btn-right markread">Mark all as read</div>
+		    	</div>
+		    	<div class="main-notification-content">
+		    		<a class="unread" href="#">
+		    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
+		    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
+		    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
+		    		</a>
+		    		<a class="unread" href="#">
+		    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
+		    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+		    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+		    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+		    		</a>
+		    	</div>
+		    	<div class="main-notification-footer text-center">
+		    		<div><small>2 unread notification</small></div>
+		    		<a href="#">View all notification</a>
+		    	</div>
+		  	</div>
+			
+		  	<a class='dropdown-profile text-center' href='#' data-target='dropdown-profile'>
+		    	<img class="nav-profile-img" valign="center" src="./img/avatar/user.png">
+		  	</a>
+		  	<div id='dropdown-profile' class="dropdown-content nav-profile-details">
+		  		<div class="nav-profile-details-header">
+		  			<div>
+		  				<img class="imground50" src="./img/avatar/user.png">
+		  			</div>
+		  			<div>
+			  			<span class="nav-profile-details-span-name">Suryanto</span>
+			  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
+		  			</div>
+		  		</div>
+		  		<div class="nav-profile-details-group">
+			    	<a class="dropdown-item" href="#">Profile</a>
+			    	<a class="dropdown-item" href="#">Setting</a>
+			    	<a class="dropdown-item" href="#">Logout</a>
+		  		</div>
+		  	</div>
 		</div>
 		
 	</div>
@@ -119,11 +116,11 @@
 		</div>
 
 
-		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
-		<div class="sidebar-avatar col-md-12">
+		<div class="col s12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
+		<div class="sidebar-avatar col s12">
 			<img class="imground50" src="./img/avatar/user.png" style="width: 100%;">
 		</div>
-		<div class="col-md-12 imgbg">
+		<div class="col s12 imgbg">
 		</div>
 		<p>Menu</p>
 		<ul>
@@ -158,8 +155,8 @@
 		</ul>
 	</div>
 	<div class="main-content row">
-		<div class="col-lg-9 col-md-12 bg-graylight">
-			<div class="col-md-12 no-padding">
+		<div class="col s9 bg-graylight">
+			<div class="col s12 no-padding">
 				<div class="accent marginleftmin15 marginrightmin15 bg-accent">
 					<h3>Hello, Suryanto!</h3>
 					<div class="dropdown">
@@ -183,7 +180,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div class="col s3">
 					<div class="task"> 
 					    <div class="front">
 					        <div class="task-header">Today</div>
@@ -207,7 +204,7 @@
 					    </div> 
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div class="col s3">
 					<div class="task"> 
 					    <div class="front">
 					        <div class="task-header">Overdue</div>
@@ -231,7 +228,7 @@
 					    </div> 
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div class="col s3">
 					<div class="task"> 
 					    <div class="front">
 					        <div class="task-header">Issues</div>
@@ -255,7 +252,7 @@
 					    </div> 
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div class="col s3">
 					<div class="task"> 
 					    <div class="front">
 					        <div class="task-header">New Account</div>
@@ -280,7 +277,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 no-padding">
+			<div class="col s12 no-padding">
 				<div class="card bg-card">
 					<div class="card-header bg-card">
 						<span></span><i class="ti-bar-chart"></i> Activity Graph
@@ -305,7 +302,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3">
+		<div class="col s3">
 			<div class="accent-2 bg-accent-2 margintopplus15">
 				<div class="accent-2-header"><span class="time"></span><div class="btn-right"><i class="ti-more"></i></div></div>
 				<div class="accent-2-content text-center"><div class="month"></div><div class="date"></div><div class="year"></div></div>
@@ -328,7 +325,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-12 no-padding">
+		<div class="col s12 no-padding">
 			<div class="main-footer">
 				2020 © ReswaraSangkara
 				<div class="btn-right">
@@ -360,7 +357,8 @@
 
 	<script src="./modules/popper.js"></script>
 
-	<script src="./js/bootstrap.min.js"></script>
+	<!-- <script src="./js/bootstrap.min.js"></script> -->
+	<script src="./modules/materialize-css/dist/js/materialize.min.js"></script>
 	<script src="./modules/chart.js/dist/Chart.bundle.js"></script>
 	<script src="./modules/chart.js/dist/Chart.bundle.min.js"></script>
 
@@ -389,6 +387,18 @@
 
 	    // Configuration options go here
 	    options: {}
+	});
+
+	
+	$('.main-notification').dropdown({
+		constrainWidth: false,
+		coverTrigger: false
+	});
+
+	$('.dropdown-profile').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+		closeOnClick: false
 	});
 
 
