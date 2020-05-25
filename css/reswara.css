@@ -1009,7 +1009,6 @@ body {
 	}
 	.float-right.time-crumb{
 		font-size: 12px;
-		color: #6c757d;
 	}
 
 	.pos-right{
@@ -1133,5 +1132,6 @@ body {
 .breadcrumb{
 	font-size: 14px;
 	font-weight: 400px;
+	color: #6c757d;
 }
 /*breadcrumb end*/
