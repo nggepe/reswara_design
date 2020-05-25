@@ -1,0 +1,21 @@
+.progress-bar-pre{
+	height: 5px;
+}
+.progress-bar-pre.background-none{
+	background-color: transparent;
+	width: 100%;
+}
+.progress-bar-pre.progress-bar-primary{
+	background-image: linear-gradient(to right, #584475, #474871)!important;
+	width: 95%;
+	position: relative;
+	animation: progressmove 1s linear infinite;
+}
+
+@keyframes progressmove {
+	0%   {width: 0%;}
+	25%  {width: 25%;}
+	50%  {width: 50%;}
+	75%  {width: 75%;}
+	100% {width: 100%;}
+}

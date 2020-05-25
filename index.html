@@ -6,6 +6,8 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/reswara.css">
+	
+
 	<style type="text/css">
 		.flip {
 		    height: 199px;
@@ -22,33 +24,88 @@
 		    text-align: center;
 		}
 	</style>
+	<div id="loader-wrapper" style="background-color: #584475;">
+
+		<div id="loader"></div>
+
+		<div class="text-center" style="color: white; font-size: 40px; position: fixed; left: 40%; right: 40%; top: 45%;"><img style="width: 80px;" src="./img/400x400.png"></div>
+
+	</div>
 </head>
 <body>
 
 <body>
 	<div class="main-top">
-		<a class="active"><span class="openbtn" onclick="">☰</span></a>
+		<div class="progress-bar-pre background-none" style="margin-bottom: -5px;">
+			<div class="progress-bar-pre progress-bar-primary"></div>
+		</div>
+		<div class="topnav-left">
+			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
+			<div class="group-search-navigation">
+				<i class="ti-search"></i>
+				<input type="text" placeholder="search.." class="search-navigation">
+			</div>
+		</div>
+		
 		<div class="topnav-right">
 			<div class="btn-group">
 			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  		<div>
-			    		<i class="fas fa-bell"></i>
+			  		<div class="main-notification">
+			    		<i class="ti-bell"></i>
 			  		</div>
 			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details">
-			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
-			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right main-notification-details">
+			    	<div class="main-notification-header">
+			    		Notification
+			    		<div class="btn-right markread">Mark all as read</div>
+			    	</div>
+			    	<div class="main-notification-content">
+			    		<a class="unread" href="#">
+			    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
+			    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
+			    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
+			    		</a>
+			    		<a class="unread" href="#">
+			    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
+			    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+			    		</a>
+			    	</div>
+			    	<div class="main-notification-footer text-center">
+			    		<div><small>2 unread notification</small></div>
+			    		<a href="#">View all notification</a>
+			    	</div>
 			  	</div>
 			</div>
 			<div class="btn-group dropdown">
 			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    	<img class="nav-profile-img" src="./img/avatar/user.png"> <span>Suryanto</span>
 			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details">
-			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
-			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-profile-details">
+			  		<div class="nav-profile-details-header">
+			  			<div>
+			  				<img class="imground50" src="./img/avatar/user.png">
+			  			</div>
+			  			<div>
+				  			<span class="nav-profile-details-span-name">Suryanto</span>
+				  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
+			  			</div>
+			  		</div>
+			  		<div class="nav-profile-details-group">
+				    	<a class="dropdown-item" href="#">Profile</a>
+				    	<a class="dropdown-item" href="#">Setting</a>
+				    	<a class="dropdown-item" href="#">Logout</a>
+			  		</div>
 			  	</div>
 			</div>
 		</div>
@@ -71,23 +128,30 @@
 		<p>Menu</p>
 		<ul>
 			<li>
-				<a class="sidebar-link sidebar-dropdown active"><i class="fas fa-tv"></i> <span>Dashboard</span></a>
+				<a class="sidebar-link sidebar-dropdown active"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
-					<li class="sidebar-dropdown-item active"><a href="#">Project</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="#">Project</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown"><i class="fas fa-th-large"></i> <span>Component</span></a>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="./pages/alert.html">Alert</a></li>
 					<li class="sidebar-dropdown-item"><a href="./pages/hero.html">Hero</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-files"></i> <span>Forms</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown"><i class="fas fa-book"></i> <span>Forms</span></a>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-pencil-alt2"></i> <span>Icons</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
+					<li class="sidebar-dropdown-item"><a href="./pages/themify-icon.html">Themify Icon</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
@@ -112,9 +176,9 @@
 				</div>
 				<div class="tab-list marginleftmin15 marginrightmin15">
 					<div class="tab-list-header">
-						<a class="tab-list-item text-center ripple active" href="#">Home</a>
-						<a class="tab-list-item text-center ripple" href="#">Budget Summary</a>
-						<a class="tab-list-item text-center ripple" href="#">Team Member</a>
+						<div class="tab-list-item text-center ripple active">Home</div>
+						<div class="tab-list-item text-center ripple">Budget Summary</div>
+						<div class="tab-list-item text-center ripple">Team Member</div>
 					</div>
 				</div>
 			</div>
@@ -216,26 +280,26 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12">
-				<div class="accent-3 bg-accent-2">
-					<div class="accent-3-header">
-						<span><i class="fa fa-map-pin"></i></span> Banyuwangi
+			<div class="col-md-12 no-padding">
+				<div class="card bg-card">
+					<div class="card-header bg-card">
+						<span></span><i class="ti-bar-chart"></i> Activity Graph
 						<div class="btn-right">
 							<div class="btn-group dropdown dropleft">
 							  	<a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							  		<div>
-							    		<i class="fa fa-ellipsis-v"></i>
+							    		<i class="ti-more"></i>
 							  		</div>
 							  	</a>
-							  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details bg-accent-2">
-							    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-							    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
-							    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+							  	<div class="dropdown-menu dropdown-list dropdown-menu-right card-dropdown">
+							    	<a class="dropdown-item" href="#"><i class="ti-flag-alt"></i> Issues</a>
+							    	<a class="dropdown-item" href="#"><i class="ti-check"></i> Completed task</a>
+							    	<a class="dropdown-item" href="#"><i class="ti-flag-alt-2"></i> Overdue task</a>
 							  	</div>
 							</div>
 						</div>
 					</div>
-					<div class="accent-3-content text-center">
+					<div class="card-content text-center">
 						<canvas id="myChart"></canvas>
 					</div>
 				</div>
@@ -243,20 +307,20 @@
 		</div>
 		<div class="col-lg-3">
 			<div class="accent-2 bg-accent-2 margintopplus15">
-				<div class="accent-2-header"><span class="time"></span><div class="btn-right"><i class="fa fa-ellipsis-v"></i></div></div>
+				<div class="accent-2-header"><span class="time"></span><div class="btn-right"><i class="ti-more"></i></div></div>
 				<div class="accent-2-content text-center"><div class="month"></div><div class="date"></div><div class="year"></div></div>
 				<div class="accent-2-footer"></div>
 			</div>
 
-			<div class="accent-3 bg-accent-3">
-				<div class="accent-3-header">
+			<div class="card bg-card">
+				<div class="card-header bg-card">
 					<span><i class="fa fa-map-pin"></i></span> Banyuwangi
-					<div class="btn-right"><i class="fa fa-ellipsis-v"></i></div>
+					<div class="btn-right"><i class="ti-more"></i></div>
 				</div>
-				<div class="accent-3-content text-center">
+				<div class="card-content text-center">
 					<p><i class="fas fa-cloud"></i> <span class="count">22</span>°C<p>
 				</div>
-				<div class="accent-3-footer">
+				<div class="card-footer bg-card">
 					<div>Sunday <div class="btn-right"><i class="fas fa-sun"></i> <span class="count">29</span> °C</div></div>
 					<div>Monday <div class="btn-right"><i class="fas fa-cloud"></i> <span class="count">23</span> °C</div></div>
 					<div>Wednesday <div class="btn-right"><i class="fas fa-bolt"></i> <span class="count">21</span> °C</div></div>
@@ -264,17 +328,37 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-sm-12 no-padding">
+			<div class="main-footer">
+				2020 © ReswaraSangkara
+				<div class="btn-right">
+					<div class="btn-group dropup">
+					  	<a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  		<div style="padding-right: 10px;">
+					    		Design by
+					  		</div>
+					  	</a>
+					  	<div class="dropdown-menu dropdown-list dropdown-menu-right card-dropdown">
+					    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+					    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
+					    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </body>
 <footer>
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './modules/themify-icons/themify-icons.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
+	<!-- <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './modules/themify-icons/ie7/ie7.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
+	
 	<script src="./jquery/jquery-3.3.1.min.js"></script>
 	<script src="./js/jquery.flip.min.js"></script>
 
 
 	<script src="./modules/popper.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
 
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./modules/chart.js/dist/Chart.bundle.js"></script>
@@ -282,7 +366,7 @@
 
 	<script src="./js/reswara.js"></script>
 	<script src="./js/reswara-time.js"></script>
-	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = './plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+	
 </footer>
 </html>
 
@@ -296,8 +380,8 @@
 	    data: {
 	        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 	        datasets: [{
-	            label: 'My First dataset',
-	            backgroundColor: '#fff',
+	            label: 'Issues',
+	            backgroundColor: '#03A9F4',
 	            borderColor: '#000',
 	            data: [0, 10, 5, 2, 20, 30, 45]
 	        }]

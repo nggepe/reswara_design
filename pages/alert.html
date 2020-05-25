@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/reswara.css">
+	
+
+	<style type="text/css">
+		.flip {
+		    height: 199px;
+		    width: 300px;
+		    margin: 0 auto;
+		}
+		.flip img {
+		    width: 300px;
+		    height: auto;
+		}
+		.flip .back {
+		    background: #2184cd;
+		    color: #fff;
+		    text-align: center;
+		}
+	</style>
+	<div id="loader-wrapper" style="background-color: #584475;">
+
+		<div id="loader"></div>
+
+		<div class="text-center" style="color: white; font-size: 40px; position: fixed; left: 40%; right: 40%; top: 45%;"><img style="width: 80px;" src="../img/400x400.png"></div>
+
+	</div>
+</head>
+<body>
+
+<body>
+	<div class="main-top">
+		<div class="progress-bar-pre background-none" style="margin-bottom: -5px;">
+			<div class="progress-bar-pre progress-bar-primary"></div>
+		</div>
+		<div class="topnav-left">
+			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
+			<div class="group-search-navigation">
+				<i class="ti-search"></i>
+				<input type="text" placeholder="search.." class="search-navigation">
+			</div>
+		</div>
+		
+		<div class="topnav-right">
+			<div class="btn-group">
+			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  		<div class="main-notification">
+			    		<i class="ti-bell"></i>
+			  		</div>
+			  	</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right main-notification-details">
+			    	<div class="main-notification-header">
+			    		Notification
+			    		<div class="btn-right markread">Mark all as read</div>
+			    	</div>
+			    	<div class="main-notification-content">
+			    		<a class="unread" href="#">
+			    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
+			    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
+			    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
+			    		</a>
+			    		<a class="unread" href="#">
+			    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
+			    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+			    		</a>
+			    		<a href="#">
+			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+			    		</a>
+			    	</div>
+			    	<div class="main-notification-footer text-center">
+			    		<div><small>2 unread notification</small></div>
+			    		<a href="#">View all notification</a>
+			    	</div>
+			  	</div>
+			</div>
+			<div class="btn-group dropdown">
+			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    	<img class="nav-profile-img" src="../img/avatar/user.png"> <span>Suryanto</span>
+			  	</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-profile-details">
+			  		<div class="nav-profile-details-header">
+			  			<div>
+			  				<img class="imground50" src="../img/avatar/user.png">
+			  			</div>
+			  			<div>
+				  			<span class="nav-profile-details-span-name">Suryanto</span>
+				  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
+			  			</div>
+			  		</div>
+			  		<div class="nav-profile-details-group">
+				    	<a class="dropdown-item" href="#">Profile</a>
+				    	<a class="dropdown-item" href="#">Setting</a>
+				    	<a class="dropdown-item" href="#">Logout</a>
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="sidebar">
+		
+		<div class="sidebar-logo">
+			<img class="sidebar-img-2" src="../img/400x400.png">
+			<span>Reswara Sangkara</span>
+		</div>
+
+
+		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
+		<div class="sidebar-avatar col-md-12">
+			<img class="imground50" src="../img/avatar/user.png" style="width: 100%;">
+		</div>
+		<div class="col-md-12 imgbg">
+		</div>
+		<p>Menu</p>
+		<ul>
+			<li>
+				<a class="sidebar-link sidebar-dropdown active"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="#">Project</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-view-grid"></i> <span>UI Component</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-files"></i> <span>Forms</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
+					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-pencil-alt2"></i> <span>Icons</span></a>
+				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="../pages/themify-icon.html">Themify Icon</a></li>
+					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="main-content row">
+		<div class="col-md-12">
+			<nav aria-label="breadcrumb">
+			  	<ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Alert</li>
+				    <li class="position-absolute pos-top pos-right d-none d-sm-block"><span class="time"></span> - 
+					<span class="month"></span> <span class="date"></span>, <span class="year"></span></li>
+			  	</ol>
+			  	
+			</nav>
+		</div>
+	</div>
+</body>
+<footer>
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../modules/themify-icons/themify-icons.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
+	<!-- <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../modules/themify-icons/ie7/ie7.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script> -->
+	
+	<script src="../jquery/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery.flip.min.js"></script>
+
+
+	<script src="../modules/popper.js"></script>
+
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../modules/chart.js/dist/Chart.bundle.js"></script>
+	<script src="../modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+	<script src="../js/reswara.js"></script>
+	<script src="../js/reswara-time.js"></script>
+	
+</footer>
+</html>

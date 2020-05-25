@@ -6,44 +6,71 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/reswara.css">
+	
+
 	<style type="text/css">
-		.flip {
-		    height: 199px;
-		    width: 300px;
-		    margin: 0 auto;
-		}
-		.flip img {
-		    width: 300px;
-		    height: auto;
-		}
-		.flip .back {
-		    background: #2184cd;
-		    color: #fff;
-		    text-align: center;
-		}
+		
+
 	</style>
+	<div id="loader-wrapper" style="background-color: #584475;">
+
+		<div id="loader"></div>
+
+		<div class="text-center" style="color: white; font-size: 40px; position: fixed; left: 40%; right: 40%; top: 45%;"><img style="width: 80px;" src="../img/400x400.png"></div>
+
+	</div>
+	
 </head>
 <body>
-
-<body>
 	<div class="main-top">
-		<a class="active"><span class="openbtn" onclick="">☰</span></a>
+		<div class="progress-bar-pre background-none">
+			<div class="progress-bar-pre progress-bar-primary"></div>
+		</div>
+		<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
 		<div class="topnav-right">
 			<div class="btn-group">
+			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  		<div>
+			    		<i class="ti-bell"></i>
+			  		</div>
+			  	</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-details">
+			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
+			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+			  	</div>
+			</div>
+			<div class="btn-group dropdown">
 			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    	<img class="nav-profile-img" src="../img/avatar/user.png"> <span>Suryanto</span>
 			  	</a>
-			  	<div class="dropdown-menu nav-details">
-			    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-			    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
-			    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Setting</a>
+			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-profile-details">
+			  		<div class="nav-profile-details-header">
+			  			<div>
+			  				<img class="imground50" src="../img/avatar/user.png">
+			  			</div>
+			  			<div>
+				  			<span class="nav-profile-details-span-name">Suryanto</span>
+				  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
+			  			</div>
+			  		</div>
+			  		<div class="nav-profile-details-group">
+				    	<a class="dropdown-item" href="#">Profile</a>
+				    	<a class="dropdown-item" href="#">Setting</a>
+				    	<a class="dropdown-item" href="#">Logout</a>
+			  		</div>
 			  	</div>
 			</div>
 		</div>
 		
 	</div>
 	<div class="sidebar">
-		<img class="sidebar-img-2" src="../img/400x400.png">
+		
+		<div class="sidebar-logo">
+			<img class="sidebar-img-2" src="../img/400x400.png">
+			<span>Reswara Sangkara</span>
+		</div>
+
 
 		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
 		<div class="sidebar-avatar col-md-12">
@@ -54,21 +81,21 @@
 		<p>Menu</p>
 		<ul>
 			<li>
-				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-tv"></i> <span>Dashboard</span></a>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
 					<li class="sidebar-dropdown-item"><a href="../index.html">Project</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="#" class="sidebar-link sidebar-dropdown active"><i class="fas fa-th-large"></i> <span>Component</span></a>
+				<a class="sidebar-link sidebar-dropdown active"><i class="ti-view-grid"></i> <span>Component</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a href="#">Hero</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="../pages/hero.html">Hero</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="#" class="sidebar-link sidebar-dropdown"><i class="fas fa-book"></i> <span>Forms</span></a>
+				<a class="sidebar-link sidebar-dropdown"><i class="ti-files"></i> <span>Forms</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
@@ -77,63 +104,33 @@
 		</ul>
 	</div>
 	<div class="main-content row">
-		<div class="col-md-12 row">
-			<div class="ripple">Click Me</div>
-		</div>
+		
 	</div>
-
 </body>
 <footer>
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../modules/themify-icons/themify-icons.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../modules/themify-icons/ie7/ie7.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+	
 	<script src="../jquery/jquery-3.3.1.min.js"></script>
 	<script src="../js/jquery.flip.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="../modules/popper.js"></script>
 
 	<script src="../js/bootstrap.min.js"></script>
-	
+	<script src="../modules/chart.js/dist/Chart.bundle.js"></script>
+	<script src="../modules/chart.js/dist/Chart.bundle.min.js"></script>
 
 	<script src="../js/reswara.js"></script>
-	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../plugins/awesome/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+	<script src="../js/reswara-time.js"></script>
+	
 </footer>
 </html>
 
 <script type="text/javascript">
 	
-</script>
+ 	
 
-<script type="text/javascript">
-	// const button = document.querySelector(".ripple");
-
-	// function materializeEffect(event) {
-	//   const circle = document.createElement("div");
-	//   const x = event.layerX;
-	//   const y = event.layerY;
-	//   circle.classList.add("circle");
-	//   circle.style.left = `${x}px`;
-	//   circle.style.top = `${y}px`;
-	//   this.appendChild(circle);
-
-	//   console.log(event);
-	// }
-
-	// button.addEventListener("click", materializeEffect);
-
-	$(".ripple").click(function(e){
-		const circle = document.createElement("div");
-		
-		var x =  e.offsetX;
-		var y = e.offsetY;
-		circle.classList.add("circle");
-		circle.style.left = `${x}px`;
-		circle.style.top = `${y}px`;
-		$(this).append(circle);
-		el = $(this);
-
-		setTimeout(
-	        function() {
-	            console.log(el.find('div').remove());
-	        },400);
-	});
 
 </script>
