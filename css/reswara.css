@@ -262,6 +262,30 @@ body {
 		vertical-align: middle;
 		margin-right: 15px;
 		color: #af9fc7;
+		position: relative;
+	}
+	.topnav-right>a>.badge.badge-notif{
+		position: absolute;
+	    display: inline-block;
+	    background-color: #f44336;
+	    color: #fff;
+	    box-shadow: 0 0 0 1px #fff;
+	    cursor: default;
+	    border: 1px solid transparent;
+	    font-size: .625rem;
+	    min-width: 1rem;
+	    max-width: 1.6875rem;
+	    height: auto;
+
+	    padding: 0 3px;
+	    border-radius: 1.25rem;
+	    font-weight: 500;
+	    line-height: normal;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    vertical-align: middle;
+
 	}
 
 	.topnav-left{
@@ -1160,4 +1184,8 @@ body {
 
 .text-left{
 	text-align: left;
+}
+
+.waves-effect.waves-main .waves-ripple {
+    background-color: rgba(88, 68, 117, 0.65);
 }
