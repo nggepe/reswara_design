@@ -1,0 +1,26 @@
+.waves-effect.waves-main .waves-ripple {
+  background-color: rgba(88, 68, 117, 0.65);
+}
+
+.section-search input.autocomplete {
+  color: #000;
+}
+.input-field .prefix.active {
+  color: #000!important;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #000!important;
+}
+.autocomplete-content li .highlight {
+  color: var(--main-color)!important;
+}
+
+/* label focus color */
+ .autocomplete input:focus + label {
+   color: red !important;
+ }
+ /* label underline focus color */
+ .row .autocomplete input:focus {
+   border-bottom: 1px solid red !important;
+   box-shadow: 0 1px 0 0 red !important
+ }

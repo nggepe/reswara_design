@@ -6,6 +6,7 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 	<!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="./modules/materialize-css/dist/css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/reswara.css">
 	
 
@@ -24,6 +25,8 @@
 		    color: #fff;
 		    text-align: center;
 		}
+
+		
 	</style>
 	<div id="loader-wrapper" style="background-color: #584475;">
 
@@ -42,9 +45,9 @@
 		</div>
 		<div class="topnav-left">
 			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
-			<div class="group-search-navigation">
-				<i class="ti-search"></i>
-				<input type="text" placeholder="search.." class="search-navigation">
+			
+			<div class="input-field col s12 my-0 wy-0">
+				<input type="text" id="autocomplete-input" class="autocomplete" placeholder="Search here...">
 			</div>
 		</div>
 		
@@ -160,17 +163,17 @@
 			<div class="col s12 no-padding">
 				<div class="accent marginleftmin15 marginrightmin15 bg-accent">
 					<h3>Hello, Suryanto!</h3>
-					<div class="dropdown">
+					
 						<!-- <div class="accent-inner">Reswara Corp. Backend APP </div> -->
-					  	<div class="btn accent-inner dropdown-toggle" data-toggle="dropdown">
+					  	<a class='accent-inner text-center' href='#' data-target='dropdown-accent'>
 					    	Reswara Corp. Backend APP
-					  	</div>
-					  	<div class="dropdown-menu nav-details  slideIn">
-						    <a class="dropdown-item" href="#">Link 1</a>
-						    <a class="dropdown-item" href="#">Link 2</a>
-						    <a class="dropdown-item" href="#">Link 3</a>
-					  	</div>
-					</div>
+					  	</a>
+					  	<ul id="dropdown-accent" class="dropdown-content">
+						    <li><a href="#!">Home</a></li>
+    						<li><a href="#!">Budget summary</a></li>
+    						<li><a href="#!">Team member</a></li>
+					  	</ul>
+					
 				</div>
 				<div class="tab-list marginleftmin15 marginrightmin15">
 					<div class="tab-list-header">
@@ -283,18 +286,16 @@
 					<div class="card-header bg-card">
 						<span></span><i class="ti-bar-chart"></i> Activity Graph
 						<div class="btn-right">
-							<div class="btn-group dropdown dropleft">
-							  	<a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							  		<div>
-							    		<i class="ti-more"></i>
-							  		</div>
-							  	</a>
-							  	<div class="dropdown-menu dropdown-list dropdown-menu-right card-dropdown">
-							    	<a class="dropdown-item" href="#"><i class="ti-flag-alt"></i> Issues</a>
-							    	<a class="dropdown-item" href="#"><i class="ti-check"></i> Completed task</a>
-							    	<a class="dropdown-item" href="#"><i class="ti-flag-alt-2"></i> Overdue task</a>
-							  	</div>
-							</div>
+						  	<a type="button" class="dropdowns" data-target='dropdown-chart'>
+						  		<div>
+						    		<i class="ti-more"></i>
+						  		</div>
+						  	</a>
+						  	<ul id="dropdown-chart" class="dropdown-content">
+							    <li><a href="#!">Home</a></li>
+	    						<li><a href="#!">Budget summary</a></li>
+	    						<li><a href="#!">Team member</a></li>
+						  	</ul>
 						</div>
 					</div>
 					<div class="card-content text-center">
@@ -402,5 +403,36 @@
 		closeOnClick: false
 	});
 
+	$('.accent-inner').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+		closeOnClick: false
+	});
 
+	$('.dropdowns').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+		closeOnClick: false
+	});
+
+	 $(document).ready(function(){
+	 	var autocompleteData = {
+	 		"Dashboard/project": null,
+	 		"Dashboard/analythic": null,
+	 		"UI Component/alert": null,
+	 	}
+	 	var autocompleteDataContent = {
+	 		"Dashboard/project": 'index.html',
+	 		"Dashboard/analythic": './pages/analythic',
+	 		"UI Component/alert": './pages/alert',
+	 	}
+
+	    $('input.autocomplete').autocomplete({
+			data: autocompleteData,
+			onAutocomplete: function(key) {
+				// alert();
+				location.href = autocompleteDataContent[key];
+			}
+	    });
+	  });
 </script>
