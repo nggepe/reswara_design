@@ -1,14 +1,8 @@
 .waves-effect.waves-main .waves-ripple {
   background-color: rgba(88, 68, 117, 0.65);
 }
-
-.section-search input.autocomplete {
-  color: #000;
-}
-.input-field .prefix.active {
-  color: #000!important;
-}
 .dropdown-content li>a, .dropdown-content li>span {
+	font-size: 13px;
   color: #000!important;
 }
 .autocomplete-content li .highlight {
@@ -24,3 +18,31 @@
    border-bottom: 1px solid red !important;
    box-shadow: 0 1px 0 0 red !important
  }
+
+ /* label color */
+.input-field label {
+ 	color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #000!important;
+ box-shadow: 0 1px 0 0 #000!important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #000;
+}
