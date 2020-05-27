@@ -4,9 +4,12 @@
 	<title></title>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../modules/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" href="../css/reswara.css">
 	<link rel="stylesheet" href="../modules/themify-icons/demo-files/demo.css">
+	<!--[if lt IE 8]><!-->
+	<link rel="stylesheet" href="../modules/themify-icons/ie7/ie7.css">
 	
 
 	<style type="text/css">
@@ -24,6 +27,8 @@
 		    color: #fff;
 		    text-align: center;
 		}
+
+
 	</style>
 	<div id="loader-wrapper" style="background-color: #584475;">
 
@@ -42,74 +47,72 @@
 		</div>
 		<div class="topnav-left">
 			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
-			<div class="group-search-navigation">
-				<i class="ti-search"></i>
-				<input type="text" placeholder="search.." class="search-navigation">
+			
+			<div class="input-field col-md-12 my-0 wy-0">
+				<input type="text" id="autocomplete-input" class="autocomplete" placeholder="Search here...">
 			</div>
 		</div>
 		
 		<div class="topnav-right">
-			<div class="btn-group">
-			  	<a type="button" class="nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  		<div class="main-notification">
-			    		<i class="ti-bell"></i>
-			  		</div>
-			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right main-notification-details">
-			    	<div class="main-notification-header">
-			    		Notification
-			    		<div class="btn-right markread">Mark all as read</div>
-			    	</div>
-			    	<div class="main-notification-content">
-			    		<a class="unread" href="#">
-			    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
-			    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
-			    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
-			    		</a>
-			    		<a class="unread" href="#">
-			    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
-			    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
-			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
-			    		</a>
-			    		<a href="#">
-			    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
-			    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
-			    		</a>
-			    	</div>
-			    	<div class="main-notification-footer text-center">
-			    		<div><small>2 unread notification</small></div>
-			    		<a href="#">View all notification</a>
-			    	</div>
-			  	</div>
-			</div>
-			<div class="btn-group dropdown">
-			  	<a type="button" class="dropdown-toggle nav-content" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    	<img class="nav-profile-img" src="../img/avatar/user.png"> <span>Suryanto</span>
-			  	</a>
-			  	<div class="dropdown-menu dropdown-list dropdown-menu-right nav-profile-details">
-			  		<div class="nav-profile-details-header">
-			  			<div>
-			  				<img class="imground50" src="../img/avatar/user.png">
-			  			</div>
-			  			<div>
-				  			<span class="nav-profile-details-span-name">Suryanto</span>
-				  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
-			  			</div>
-			  		</div>
-			  		<div class="nav-profile-details-group">
-				    	<a class="dropdown-item" href="#">Profile</a>
-				    	<a class="dropdown-item" href="#">Setting</a>
-				    	<a class="dropdown-item" href="#">Logout</a>
-			  		</div>
-			  	</div>
-			</div>
+
+		  	<a class='main-notification text-center' href='#' data-target='dropdown-notif'>
+		    	<i class="ti-bell"></i>
+		    	<span class="badge badge-notif">2</span>
+		  	</a>
+		  	<div id='dropdown-notif' class="dropdown-content main-notification-details">
+		    	<div class="main-notification-header">
+		    		Notification
+		    		<div class="btn-right markread">Mark all as read</div>
+		    	</div>
+		    	<div class="main-notification-content">
+		    		<a class="unread" href="#">
+		    			<div class="notification-item1 bg-primary"><i class="ti-ticket"></i></div>
+		    			<div class="notification-item2 text-left"><div>12 new tickets, you need to reply these!</div><div><small>3 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-issue"><i class="ti-flag-alt-2"></i></div>
+		    			<div class="notification-item2 text-left"><div>13 new issues, take some of those to be your task!</div><div><small>13 Hours ago</small></div></div>
+		    		</a>
+		    		<a class="unread" href="#">
+		    			<div class="notification-item1 bg-info"><i class="ti-marker-alt"></i></div>
+		    			<div class="notification-item2 text-left"><div>2 new tasks, you got tasks from Musini!</div><div><small>14 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+		    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+		    		</a>
+		    		<a href="#">
+		    			<div class="notification-item1 bg-success"><i class="ti-check"></i></div>
+		    			<div class="notification-item2 text-left"><div>5 tasks accepted, your tasks has been aproved by Musini!</div><div><small>18 Hours ago</small></div></div>
+		    		</a>
+		    	</div>
+		    	<div class="main-notification-footer text-center">
+		    		<div><small>2 unread notification</small></div>
+		    		<a href="#">View all notification</a>
+		    	</div>
+		  	</div>
+			
+		  	<a class='dropdown-profile text-center waves-effect waves-main' href='#' data-target='dropdown-profile'>
+		    	<img class="nav-profile-img" valign="center" src="../img/avatar/user.png">
+		  	</a>
+		  	<div id='dropdown-profile' class="dropdown-content nav-profile-details">
+		  		<div class="nav-profile-details-header">
+		  			<div>
+		  				<img class="imground50" src="../img/avatar/user.png">
+		  			</div>
+		  			<div>
+			  			<span class="nav-profile-details-span-name">Suryanto</span>
+			  			<span class="nav-profile-details-span-email">suryanto@reswara.com</span>
+		  			</div>
+		  		</div>
+		  		<div class="nav-profile-details-group">
+			    	<a class="dropdown-item" href="#">Profile</a>
+			    	<a class="dropdown-item" href="#">Setting</a>
+			    	<a class="dropdown-item" href="#">Logout</a>
+		  		</div>
+		  	</div>
 		</div>
+		
 	</div>
 	<div class="sidebar">
 		
@@ -128,30 +131,30 @@
 		<p>Menu</p>
 		<ul>
 			<li>
-				<a class="sidebar-link sidebar-dropdown"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
-					<li class="sidebar-dropdown-item"><a href="../index.html">Project</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="index.html">Project</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown"><i class="ti-view-grid"></i> <span>Component</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
+					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
-					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown"><i class="ti-files"></i> <span>Forms</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main"><i class="ti-files"></i> <span>Forms</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 1</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown active"><i class="ti-pencil-alt2"></i> <span>Icons</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main"><i class="ti-pencil-alt2"></i> <span>Icons</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a class="active" href="#">Themify Icon</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/themify-icon.html">Themify Icon</a></li>
 					<li class="sidebar-dropdown-item"><a href="#">dropdown 2</a></li>
 				</ul>
 			</li>
@@ -1319,7 +1322,8 @@
 
 	<script src="../modules/popper.js"></script>
 
-	<script src="../js/bootstrap.min.js"></script>
+	<!-- <script src="../js/bootstrap.min.js"></script> -->
+	<script src="../modules/materialize-css/dist/js/materialize.min.js"></script>
 	<script src="../modules/chart.js/dist/Chart.bundle.js"></script>
 	<script src="../modules/chart.js/dist/Chart.bundle.min.js"></script>
 

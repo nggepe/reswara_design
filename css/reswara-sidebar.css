@@ -35,7 +35,6 @@
 	display: block;
 	transition: 0.3s;
 	background-image: var(--sidebar-bg-color-a);
-	
 }
 
 .sidebar a:hover {

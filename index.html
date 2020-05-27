@@ -331,18 +331,16 @@
 			<div class="main-footer">
 				2020 © ReswaraSangkara
 				<div class="btn-right">
-					<div class="btn-group dropup">
-					  	<a type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  		<div style="padding-right: 10px;">
-					    		Design by
-					  		</div>
-					  	</a>
-					  	<div class="dropdown-menu dropdown-list dropdown-menu-right card-dropdown">
-					    	<a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-					    	<a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Setting</a>
-					    	<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-					  	</div>
-					</div>
+					
+				  	<a type="button" class="dropdowns" data-target="dropdowns-footer">
+				  		<div style="padding-right: 10px;">
+				    		Design by
+				  		</div>
+				  	</a>
+				  	<ul id="dropdowns-footer" class="dropdown-content">
+					    <li><a href="#!">Gilang Pratama</a></li>
+						<li><a href="#!">Rizal Rahmana</a></li>
+				  	</ul>
 				</div>
 			</div>
 		</div>
@@ -390,48 +388,4 @@
 	    // Configuration options go here
 	    options: {}
 	});
-
-	
-	$('.main-notification').dropdown({
-		constrainWidth: false,
-		coverTrigger: false
-	});
-
-	$('.dropdown-profile').dropdown({
-		constrainWidth: false,
-		coverTrigger: false,
-		closeOnClick: false
-	});
-
-	$('.accent-inner').dropdown({
-		constrainWidth: false,
-		coverTrigger: false,
-		closeOnClick: false
-	});
-
-	$('.dropdowns').dropdown({
-		constrainWidth: false,
-		coverTrigger: false,
-	});
-
-	 $(document).ready(function(){
-	 	var autocompleteData = {
-	 		"Dashboard/project": null,
-	 		"Dashboard/analythic": null,
-	 		"UI Component/alert": null,
-	 	}
-	 	var autocompleteDataContent = {
-	 		"Dashboard/project": 'index.html',
-	 		"Dashboard/analythic": './pages/analythic',
-	 		"UI Component/alert": './pages/alert',
-	 	}
-
-	    $('input.autocomplete').autocomplete({
-			data: autocompleteData,
-			onAutocomplete: function(key) {
-				// alert();
-				location.href = autocompleteDataContent[key];
-			}
-	    });
-	  });
 </script>

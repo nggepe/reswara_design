@@ -3897,3 +3897,13 @@ html {
   }
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */
+
+.position-absolute{
+  position: absolute!important;
+}
+.pos-top-0 {
+  top: 0;
+}
+.pos-right-0 {
+  right: 0;
+}

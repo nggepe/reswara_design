@@ -130,7 +130,69 @@ $(document).ready(function(){
 	        },600);
 	});
 
+	$('.main-notification').dropdown({
+		constrainWidth: false,
+		coverTrigger: false
+	});
 
+	$('.dropdown-profile').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+		closeOnClick: false
+	});
+
+	$('.accent-inner').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+	});
+
+	$('.dropdowns').dropdown({
+		constrainWidth: false,
+		coverTrigger: false,
+	});
+
+	var SearchAutocompleteData = {
+ 		"Dashboard/project": null,
+ 		"Dashboard/analythic": null,
+ 		"UI Component/alert": null,
+ 	}
+ 	var SearchAutocompleteDataIndexHTML = {
+ 		"Dashboard/project": 'index.html',
+ 		"Dashboard/analythic": './pages/analythic.html',
+ 		"UI Component/alert": './pages/alert.html',
+ 	}
+
+ 	var SearchAutocompleteDataNonIndex = {
+ 		"Dashboard/project": '../index.html',
+ 		"Dashboard/analythic": 'analythic.html',
+ 		"UI Component/alert": 'alert.html',
+ 	}
+
+
+
+ 	var baseURL = window.location.origin;
+ 	if (baseURL=='http://localhost') {
+ 		baseURL = String(location.href);
+ 		baseURL = baseURL.split("/");
+ 		baseURL = baseURL[3];
+ 	}
+
+    $('input.autocomplete').autocomplete({
+		data: SearchAutocompleteData,
+		onAutocomplete: function(key) {
+			// alert();
+			// location.href = autocompleteDataContent[key];
+			var url = location.href;
+			var uri = url.split('/');
+			if (url==baseURL || uri[uri.length-1]=="index.html") {
+				location.href = SearchAutocompleteDataIndexHTML[key];
+			}
+			else{
+				location.href = SearchAutocompleteDataNonIndex[key];
+			}
+			console.log(baseURL);
+		}
+    });
 });
 
 

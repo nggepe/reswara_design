@@ -1,15 +1,14 @@
+
 @import url("reswara-root.css");
+@import url("reswara-materialize.css");
+@import url("bootstrap-grid.css");
+@import url("reswara-bootstraptext.css");
+
 @import url("reswara-sidebar.css");
 @import url("reswara-top-navigation.css");
 @import url("reswara-preloader.css");
 @import url("reswara-progress-bar.css");
-@import url("reswara-bootstraptext.css");
-
-@import url("reswara-materialize.css");
-
-@import url("bootstrap-grid.css");
-
-
+@import url("reswara-breadcrumb.css");
 
 /*main*/
 	.main-content{
@@ -30,18 +29,32 @@
 		padding-left: 20px;
 		font-size: 12px;
 	}
+	h1.main-content-title{
+		font-size: 20px;
+		line-height: 1;
+		margin: 0;
+		color: #fff;
+		margin-left: 15px;
+		font-weight: 500;
+	}
+
+	.main-content-header-2{
+		height: 200px;
+		background-color: var(--main-color);
+		margin-bottom: -90px;
+	}
 /*main*/
 
 /*accent*/
 	.accent{
 		/*box-shadow: 2px 1px 10px #2f282f;*/
 		height: auto;
-		font-size: 30px;
+		
 		color: #774c84;
-		padding-top: 40px;
-		padding-bottom: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		padding-left: 20px;
-		margin-left: 0px;
+		margin-left: 20px;
 		/*border-radius: 10px 10px 0px 0px;*/
 	}
 
@@ -51,10 +64,11 @@
 		color: #f0e3f3 !important;
 		
 		margin-left: 0px;
-		margin-bottom: -10px;
+		margin-bottom: -20px;
 		padding-left: 15px;
 		padding-top: 10px;
 		padding-right: 15px;
+		padding-bottom: 0px;
 		border-radius: 5px 5px 0px 0px;
 
 		display: inline-block;
@@ -420,16 +434,12 @@
 
 .btn-right:active {
   	border: none;
-  	opacity: 0.1;
 }
 
 /*floating*/
-	.float-right{
-		float: right;
-	}
-	.float-right.time-crumb{
-		font-size: 12px;
-	}
+.float-right{
+	float: right;
+}
 
 	.pos-right{
 		right: 16px;
@@ -548,11 +558,26 @@
 	}
 /*scrollbar end*/
 
-/*breadcrumb*/
-.breadcrumb{
-	font-size: 14px;
-	font-weight: 400px;
-	color: #6c757d;
+.panel{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px 0px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
-/*breadcrumb end*/
 
+.panel-header{
+	padding: 0px 25px 10px 20px;
+	border-bottom: 1px groove;
+}
+
+.panel-content p{
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+.panel-footer{
+	padding: 0px 0px 2px 0px;
+	border-top: 1px groove;
+	font-size: 14px;
+	/*font-family: SquadaOne-Regular;*/
+}

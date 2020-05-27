@@ -1,0 +1,32 @@
+ul.breadcrumb {
+  padding: 2px 15px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+  color: #fff;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #d0d0d0;
+  content: "\e649";
+  font-family: 'themify';
+}
+
+ul.breadcrumb li+li:nth-last-child(1):before {
+  content: "";
+}
+
+ul.breadcrumb li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 14px;
+}
+ul.breadcrumb li a:hover {
+  color: #fff;
+}
