@@ -7,6 +7,10 @@
 	--nav-profile-details-header-bg: linear-gradient(to right, #584475, #3e60bf);
 
 	--main-color:#584475;
+	--main-color-hover:#4d3c67;
+
+	--warning-color:#ff9900;
+	--warning-color-hover:#e08702;
 }
 
 @font-face {

@@ -41,7 +41,8 @@
 	.main-content-header-2{
 		height: 200px;
 		background-color: var(--main-color);
-		margin-bottom: -90px;
+		margin-bottom: -110px;
+		border-radius: 0px 0px 0px 0px;
 	}
 /*main*/
 
@@ -559,25 +560,63 @@
 /*scrollbar end*/
 
 .panel{
+	margin: 10px 0px;
 	background-color: #fff;
 	border-radius: 5px;
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 .panel-header{
 	padding: 0px 25px 10px 20px;
-	border-bottom: 1px groove;
 }
 
-.panel-content p{
-	font-size: 50px;
-	margin-top: 20px;
+.panel-content{
+	/*border-bottom: 1px solid #cccccc;*/
+	padding: 10px 25px 10px 20px;
+	border-top: 1px solid #cccccc;
 }
 
+.panel-content.collapsed-panel::after{
+	visibility: collapse;
+}
 .panel-footer{
 	padding: 0px 0px 2px 0px;
-	border-top: 1px groove;
 	font-size: 14px;
+	height: auto;
 	/*font-family: SquadaOne-Regular;*/
+}
+
+
+.btn-panel{
+	margin-left: .3rem;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+.btn-primary{
+	background-color: var(--main-color);
+}
+
+.btn-primary:hover{
+	background-color: var(--main-color-hover);
+}
+.btn-primary:focus{
+	background-color: var(--main-color-hover);
+}
+
+.btn-warning{
+	background-color: var(--warning-color);
+}
+
+.btn-warning:hover{
+	background-color: var(--warning-color-hover);
+}
+.btn-warning:focus{
+	background-color: var(--warning-color-hover);
 }

@@ -193,6 +193,15 @@ $(document).ready(function(){
 			console.log(baseURL);
 		}
     });
+
+    $('.btn-collapse-panel').click(function(){
+    	if ($(this).parent().parent().parent().find('.panel-content').hasClass('collapsed-panel')) {
+    		$(this).parent().parent().parent().find('.panel-content').slideDown(200).removeClass('collapsed-panel');
+    	}
+    	else{
+    		$(this).parent().parent().parent().find('.panel-content').slideUp(200).addClass('collapsed-panel');
+    	}
+    });
 });
 
 
