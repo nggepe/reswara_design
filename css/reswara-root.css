@@ -1,8 +1,9 @@
 :root {
 	--sidebar-bg-color: linear-gradient(to right, #584475, #474871);
+	--sidebar-bg-color-a-hover: linear-gradient(to right, #483465, #3f4067);
+	
 	--sidebar-bg-color-a: linear-gradient(to right, #584475, #474871);
 	--sidebar-bg-a-active: linear-gradient(to right, #614a82, #565786);
-	--sidebar-bg-color-a-hover: linear-gradient(to right, #483465, #3f4067);
 
 	--nav-profile-details-header-bg: linear-gradient(to right, #584475, #3e60bf);
 
