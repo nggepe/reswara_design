@@ -6,29 +6,11 @@
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="../modules/materialize-css/dist/css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../css/reswara.css">
-	<link rel="stylesheet" href="../modules/themify-icons/demo-files/demo.css">
-	<!--[if lt IE 8]><!-->
-	<link rel="stylesheet" href="../modules/themify-icons/ie7/ie7.css">
 	
-
-	<style type="text/css">
-		.flip {
-		    height: 199px;
-		    width: 300px;
-		    margin: 0 auto;
-		}
-		.flip img {
-		    width: 300px;
-		    height: auto;
-		}
-		.flip .back {
-		    background: #2184cd;
-		    color: #fff;
-		    text-align: center;
-		}
-
-
+	<style>
+		
 	</style>
 	<div id="loader-wrapper" style="background-color: #584475;">
 
@@ -115,32 +97,43 @@
 		
 	</div>
 	<div class="sidebar">
-		
 		<div class="sidebar-logo">
 			<img class="sidebar-img-2" src="../img/400x400.png">
 			<span>Reswara Sangkara</span>
 		</div>
 
+		<div class="col-md-12 text-center bio-sidebar">
+			<b>Suryanto</b><br><small>suryanto@reswara.com</small>
+		</div>
 
-		<div class="col-md-12 text-center bio-sidebar"><b>Suryanto</b><br><small>suryanto@reswara.com</small></div>
 		<div class="sidebar-avatar col-md-12">
 			<img class="imground50" src="../img/avatar/user.png" style="width: 100%;">
 		</div>
-		<div class="col-md-12 imgbg">
+
+		<a href="#!" class="sidebar-search waves-effect waves-purple">
+			<i class="ti-angle-down"></i>
+		</a>
+		<div class="sidebar-search-group">
+			<input type="text" class="sidebar-search-input">
+			<a href="#!" class="sidebar-search-collapse waves-effect waves-purple">
+				<i class="ti-angle-up"></i>
+			</a>
 		</div>
-		<p>Menu</p>
 		<ul>
+			<p>Menu</p>
 			<li>
-				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main"><i class="ti-dashboard"></i> <span>Dashboard</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="#">Analythic</a></li>
-					<li class="sidebar-dropdown-item"><a class="active" href="index.html">Project</a></li>
+					<li class="sidebar-dropdown-item"><a href="../index.html">Project</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="sidebar-link sidebar-dropdown waves-effect waves-main"><i class="ti-view-grid"></i> <span>UI Component</span></a>
+				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/cards.html">Cards</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="../pages/panels.html">Panels</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
 				</ul>
 			</li>

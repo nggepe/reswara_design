@@ -236,6 +236,7 @@
     opacity: 1;
     padding: 0px!important;
     cursor: pointer!important;
+    display: all;
 }
 
 .sidebar-search:hover{
@@ -287,6 +288,7 @@
 	line-height: 0.2;
 	padding: 8px 10px!important;
 	background-image: var(--sidebar-bg-color-a-hover)!important;
+	text-align: center;
     
     color: #fff;
 }
