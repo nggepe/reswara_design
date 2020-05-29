@@ -61,6 +61,7 @@
 .sidebar p {
 	margin-left: 0px;
 	margin-top: 0px;
+	padding-top: 0px!important;
 	padding-left: 20px;
 	color: #af9fc7;
 	font-size: 12px;

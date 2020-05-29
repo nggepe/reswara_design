@@ -204,11 +204,16 @@ $(document).ready(function(){
     });
 
     $('.sidebar-search').click(function(){
-    	$('.sidebar-search-group').slideDown(200).addClass('active');
-    	$('.sidebar-search-input').focus();
+    	if ($('.sidebar-search-group').hasClass('active')) {
+    		$('.sidebar-search-group').slideUp(200).removeClass('active');
+    	}
+    	else{
+	    	$('.sidebar-search-group').slideDown(200).addClass('active');
+	    	$('.sidebar-search-input').focus();
+    	}
     });
     $('.sidebar-search-collapse').click(function(){
-    	$('.sidebar-search-group').slideUp(200).removeClass('active');
+    	
     });
     $('.sidebar-search-input').keyup(function(){
     	var submenu = $('.sidebar').find('.sidebar-dropdown-item').find('a');
