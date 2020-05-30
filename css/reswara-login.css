@@ -1,5 +1,16 @@
 @import url("reswara-root.css");
 @import url("reswara-preloader.css");
+@import url("bootstrap-grid.css");
+
+body{
+	background-color: var(--main-color);
+}
+
+.container-login{
+	background-color: var(--main-color-hover);
+	display: flex;
+	
+}
 
 .login-from{
 	width: 400px;
@@ -11,6 +22,8 @@
 	padding-bottom: 30px;
 	padding-top: 20px;
 	display: inline-block;
+	position: absolute;
+	z-index: 1;
 }
 
 .login-from > .header{
@@ -49,10 +62,18 @@
 
 .remember{
 	font-size: 11px;
+	color: #9e9e9e;
+	display: block;
+}
+
+.remember div{
+	padding-top: 5px;
+	padding-right: 10px;
 }
 
 .remember > label > span{
 	font-size: 11px !important;
+
 }
 .remember > label > input{
 	width: 5px!important;
@@ -60,6 +81,12 @@
 	margin-right: 5px!important;
 	top: 0px;
 	font-size: 11px;
+
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
 }
 
 .login-from > .content > .input-field{
@@ -71,8 +98,19 @@
 
 .input-field > input{
 	font-size: 13px!important;
-	line-height: 1;
 	color: #9e9e9e;
+	height: 20px!important;
+}
+.input-field > label{
+	font-size: 13px!important;
+	color: #9e9e9e;
+	top: -10px;
+}
+
+.input-field > input, input::-webkit-input-placeholder{
+	font-size: 13px!important;
+	color: #9e9e9e;
+	height: 20px!important;
 }
 
 .input-field > input:focus + label{
@@ -90,4 +128,41 @@
 .header img{
 	width: 60px;
 	position: relative;
+}
+
+.content-footer{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.btn-login{
+	display: block !important;
+	width: 100%;
+	background-color: none;
+	background-image: var(--sidebar-bg-color-a);
+}
+
+input[type="checkbox"]:checked+span:not(.lever):before {
+	color: #9e9e9e;
+}
+
+.background-right{
+	position: absolute;
+	left: 400px;
+	z-index: 0;
+	padding: 0px;
+	color: white;
+}
+.background-right img{
+	opacity: 0.3;
+	width: 1000px;
+	height: 100%;
+	left: 400px;
+	margin-bottom: 0px;
+	position: fixed;
 }

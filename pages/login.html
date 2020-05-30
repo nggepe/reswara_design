@@ -21,39 +21,46 @@
 	</div>
 </head>
 <body>
-	<div class="login-from">
-		<div class="header">
-			<div>
-				<img src="../img/400x400.png">
+	<div class="container-login">
+		<div class="login-from">
+			<div class="header">
+				<div>
+					<img src="../img/400x400.png">
+				</div>
+				Reswara Sangkara
 			</div>
-			Reswara Sangkara
+			<form class="content">
+				<div class="pre">LOGIN TO YOUR ACCOUNT</div>
+				<div class="input-field inline">
+		            <input id="email" type="email" class="validate">
+		            <label for="email">Email</label>
+		        </div>
+		        <div class="input-field inline">
+		            <input id="password" type="password" class="validate">
+		            <label for="password">Password</label>
+		        </div>
+		        <div class="remember">
+			      	<label>
+			        	<input type="checkbox" checked="checked" />
+			        	<span>Remember me</span>
+			      	</label>
+			      	<div style="float: right;">forgot your password?</div>
+			    </div>
+		        <div class="content-footer">
+		        	<button type="button" class="btn btn-login waves-effect waves-main">Login</button>
+		        </div>
+		        
+			</form>
+			<div class="footer">
+				
+			</div>
 		</div>
-		<form class="content">
-			<div class="pre">LOGIN TO YOUR ACCOUNT</div>
-			<div class="input-field inline">
-	            <input id="email" type="email" class="validate">
-	            <label for="email">Email</label>
-	        </div>
-	        <div class="input-field inline">
-	            <input id="password" type="password" class="validate">
-	            <label for="password">Password</label>
-	        </div>
-	        <div class="remember">
-		      	<label>
-		        	<input type="checkbox" checked="checked" />
-		        	<span>Remember me</span>
-		      	</label>
-		      	<div style="float: right;">forgot your password?</div>
-		    </div>
-	        <div>
-	        	<!-- <button class="btn btn-block btn-login">Login</button> -->
-	        </div>
-	        
-		</form>
-		<div class="footer">
-			
+		<div class="background-right">
+			<img src="../img/bg/arjuna.jpg">
+			<span>haloo</span>
 		</div>
 	</div>
+	
 </body>
 <footer>
 	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = '../modules/themify-icons/themify-icons.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
@@ -78,5 +85,11 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('body').attr('class','loaded');
+		// $("div").animate({
+	 //      left: '250px',
+	 //      opacity: '0.5',
+	 //      height: '150px',
+	 //      width: '150px'
+	 //    });
 	});
 </script>
