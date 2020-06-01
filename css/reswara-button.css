@@ -1,0 +1,142 @@
+.btn{
+	text-transform: none;
+	padding: .25rem 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 5px;
+    height: auto;
+}
+
+.btn:focus{
+	box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5) inset!important;
+}
+
+.btn.btn-xs{
+	padding: 1px .844rem;
+    font-size: .7rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn.btn-sm{
+	text-transform: none;
+	padding: .25rem 1rem;
+    font-size: .9rem;
+    line-height: 1.4;
+    border-radius: 5px;
+    height: auto;
+}
+
+.btn.btn-md{
+	text-transform: none;
+	padding: .25rem 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 5px;
+    height: auto;
+}
+
+.btn.btn-lg{
+	text-transform: none;
+	padding: .25rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    height: auto;
+}
+
+.btn.btn-xlg{
+	text-transform: none;
+	padding: .1rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.25;
+    border-radius: 5px;
+    height: auto;
+}
+
+.btn.btn-rounded{
+	text-transform: none;
+	border-radius: 20px;
+}
+
+.btn-primary{
+	background-color: var(--main-color);
+}
+.btn-primary:hover{
+	background-color: var(--main-color-hover);
+}
+.btn-primary:focus{
+	background-color: var(--main-color-hover);
+}
+
+.btn-warning{
+	background-color: var(--warning-color);
+}
+.btn-warning:hover{
+	background-color: var(--warning-color-hover);
+}
+.btn-warning:focus{
+	background-color: var(--warning-color-hover);
+}
+
+.btn-default{
+	background-color: var(--default-color);
+}
+.btn-default:hover{
+	background-color: var(--default-color-hover);
+}
+.btn-default:focus{
+	background-color: var(--default-color-hover);
+}
+
+.btn-danger{
+	background-color: var(--danger-color);
+}
+.btn-danger:hover{
+	background-color: var(--danger-color-hover);
+}
+.btn-danger:focus{
+	background-color: var(--danger-color-hover);
+}
+
+.btn-info{
+	background-color: var(--info-color);
+}
+.btn-info:hover{
+	background-color: var(--info-color-hover);
+}
+.btn-info:focus{
+	background-color: var(--info-color-hover);
+}
+
+.btn-success{
+	background-color: var(--success-color);
+}
+.btn-success:hover{
+	background-color: var(--success-color-hover);
+}
+.btn-success:focus{
+	background-color: var(--success-color-hover);
+}
+
+.btn-dark{
+	background-color: var(--dark-color);
+}
+.btn-dark:hover{
+	background-color: var(--dark-color-hover);
+}
+.btn-dark:focus{
+	background-color: var(--dark-color-hover);
+}
+
+.btn-light{
+	background-color: var(--light-color);
+	color: #3a3a3a;
+	border-color: #3a3a3a;
+}
+.btn-light:hover{
+	background-color: var(--light-color-hover);
+}
+.btn-light:focus{
+	background-color: var(--light-color-hover);
+}

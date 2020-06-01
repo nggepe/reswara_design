@@ -9,9 +9,29 @@
 
 	--main-color:#584475;
 	--main-color-hover:#4d3c67;
+	--main-color-focus: rgba(88, 68, 117, 0.4);
 
 	--warning-color:#ff9900;
 	--warning-color-hover:#e08702;
+
+	--default-color:#bbb;
+	--default-color-hover:#b1b0b0;
+
+	--danger-color:#ff4747;
+	--danger-color-hover:#e64040;
+
+	--info-color:#0089ff;
+	--info-color-hover:#0480ea;
+
+	--success-color:#34d465;
+	--success-color-hover:#30ca5f;
+
+	--dark-color:#656767;
+	--dark-color-hover:#616363;
+
+	--light-color:#fff;
+	--light-color-hover:#ececec;
+
 }
 
 @font-face {
@@ -21,4 +41,13 @@
 
 body {
 	background-color: #ececec;
+}
+
+code{
+	color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 80%;
+    font-family: Consolas,"courier new";
 }

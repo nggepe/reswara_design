@@ -32,7 +32,7 @@
 	font-size: 14px;
 	color: #af9fc7;
 	display: block;
-	transition: 0.3s;
+	transition: 0.2s;
 	background-image: var(--sidebar-bg-color-a);
 }
 
@@ -131,7 +131,7 @@
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     font-size: 12px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 
@@ -149,7 +149,7 @@
     margin-top: 4px;
     right: 20px;
     font-size: 12px;
-    transition: 0.5s;
+    transition: 0.2s;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     transform: rotate(90deg);
