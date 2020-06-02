@@ -202,14 +202,9 @@ $(document).ready(function(){
 		});
     });
 
-    // $(".search-navigation").focus(function(){
-    	
-    // 	$(".search-navigation").animate({width: "300px"});
-    // });
-
-    // $('.search-navigation').focusout(function(){
-    	
-    // });
+    $(".dismiss-alert").click(function(){
+    	$(this).parent().hide();
+    });
     	
 
 });

@@ -7,6 +7,19 @@
     margin: 10px 0px;
 }
 
+.alert .dismiss-alert{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.14rem 1.25rem;
+    color: inherit;
+    background-color: inherit;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+
 .alert.alert-primary {
     color: #584475;
     background-color: #ececec;
@@ -48,3 +61,4 @@
     background-color: #ffeeee;
     border-color: #e20000;
 }
+

@@ -30,9 +30,9 @@
 		<div class="topnav-left">
 			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
 			
-			<div class="input-field col-md-12 my-0 wy-0">
-				<input type="text" id="autocomplete-input" class="autocomplete" placeholder="Search here...">
-			</div>
+			<form class="saerch-nav-group">
+				<input type="text" class="search-navigation" placeholder="Search here...">
+			</form>
 		</div>
 		
 		<div class="topnav-right">
@@ -129,8 +129,9 @@
 				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
 					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
-					<li class="sidebar-dropdown-item"><a href="../pages/cards.html">Cards</a></li>
-					<li class="sidebar-dropdown-item"><a class="active" href="../pages/panels.html">Panels</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/button.html">Buttons</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="../pages/cards.html">Cards</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/panels.html">Panels</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
 				</ul>
 			</li>
@@ -151,12 +152,73 @@
 		</ul>
 	</div>
 	<div class="main-content row">
-		<ul class="breadcrumb">
-		  	<li><a href="#">Reswara</a></li>
-		  	<li><a href="#">UI Component</a></li>
-		  	<li>Alert</li>
-		  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
-		</ul>
+		<div class="col-md-12 no-padding">
+			<div class="row">
+				<div class="col-md-12 main-content-header-2">
+					<ul class="breadcrumb">
+					  	<li><a href="#">Reswara</a></li>
+					  	<li><a href="#">UI Component</a></li>
+					  	<li>Card</li>
+					  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
+					</ul>
+					<h1 class="main-content-title"><i class="ti-notepad"></i> Card</h1>
+					<span>Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</span>
+				</div>
+				<div class="col-md-12 row px-3 py-3">
+					<div class="col-md-4">
+						<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      	<img class="activator" src="../img/bg/arjuna.jpg">
+						    </div>
+						    <div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Default
+									<i class="material-icons right">more_vert</i>
+								</span>
+								<p><a href="https://materializecss.com/cards.html" target="_blank">From materialize</a></p>
+						    </div>
+					    	<div class="card-reveal">
+					      		<span class="card-title grey-text text-darken-4">Card Title
+					      			<i class="material-icons right">close</i>
+					      		</span>
+					      		<p><code>class="card-image"</code> to set up your image. <code> class="card-content"</code> for your card content. <code>class="class-reveal"</code> is here.</p>
+					    	</div>
+					  	</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+					        <div class="card-image">
+					          	<img src="../img/bg/arjuna.jpg">
+					          	<span class="card-title">Card Title</span>
+					          	<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+					        </div>
+					        <div class="card-content">
+					          	<p>Simple card materialize. 
+					          	<code>class="btn-floating halfway-fab"</code> to set up your button.</p>
+					        </div>
+					    </div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      	
+						    </div>
+						    <div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Default
+									<i class="material-icons right">more_vert</i>
+								</span>
+								<p>If you want to create a card without image, you should try this one. The scroll bar will active when your <code>card-reveal</code> is full</p>
+						    </div>
+					    	<div class="card-reveal">
+					      		<span class="card-title grey-text text-darken-4">Card Title
+					      			<i class="material-icons right">close</i>
+					      		</span>
+					      		<p><code> class="card-content"</code> for your card content. <code>class="class-reveal"</code> is here.</p>
+					    	</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<div class="col-md-12 no-padding">
 			<div class="main-footer">
