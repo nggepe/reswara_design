@@ -2,12 +2,13 @@
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	z-index: 2;
+	z-index: 9;
 	top: 0;
 	left: 0;
 	
 	background-image: var(--sidebar-bg-color);
 	overflow-x: hidden;
+	scrollbar-width: thin;
 	transition: 0.2s;
 }
 

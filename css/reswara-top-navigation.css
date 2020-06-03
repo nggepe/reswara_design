@@ -210,8 +210,9 @@
 }
 
 .main-notification-content{
-	max-height: 300px;
+	max-height: 320px;
 	overflow: auto;
+	scrollbar-width: thin; /*for mozilla*/
 	padding: 0px 0px;
 	background-color: #403f67;
 }

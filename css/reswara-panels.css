@@ -1,0 +1,70 @@
+.panel{
+	margin: 10px 0px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px 0px 0px 0px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	position: relative;
+}
+
+.panel.maximize{
+	border-radius: none!important;
+	margin-top: 0px!important;
+
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0!important;
+	z-index: 10;
+}
+
+.panel-header{
+	padding: 0px 25px 10px 20px;
+}
+
+.panel-content{
+	/*border-bottom: 1px solid #cccccc;*/
+	padding: 10px 25px 10px 20px;
+	border-top: 1px solid #cccccc;
+}
+
+.profil-panel-header{
+	padding: 0px 25px 10px 80px;
+}
+
+.panel-content.collapsed-panel::after{
+	visibility: collapse;
+}
+.panel-footer{
+	padding: 0px 0px 2px 0px;
+	font-size: 14px;
+	height: auto;
+	/*font-family: SquadaOne-Regular;*/
+}
+
+.profil-panel-content{
+	/*border-bottom: 1px solid #cccccc;*/
+	padding: 10px 25px 10px 20px;
+	border-top: 1px solid #cccccc;
+}
+
+.profil-panel-content img{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 60px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	margin-top: -40px;
+}
+
+
+.panel>.btn-panel, div.panel > div.panel-header > div > .btn-panel, div.panel > div.profil-panel-header > div > .btn-panel {
+	margin-left: .3rem;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: .8;
+}

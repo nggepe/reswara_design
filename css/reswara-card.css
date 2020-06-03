@@ -1,3 +1,52 @@
 .card{
 	border-radius: 5px;
 }
+
+.card.card-primary, .card-reveal.card-primary{
+	background-color: var(--main-color);
+	color: white;
+}
+
+.card.card-primary-gr, .card-reveal.card-primary-gr{
+	background-color: var(--main-color);
+	background-image: linear-gradient(to bottom right, rgba(255, 0, 247, 0.4), #584475);
+	color: white;
+}
+
+.card.card-warning, .card-reveal.card-warning{
+	background-color: var(--warning-color);
+	color: white;
+}
+
+.card.card-warning-gr, .card-reveal.card-warning-gr{
+	background-color: var(--warning-color);
+	background-image: linear-gradient(to bottom right, #ff9900, rgba(255, 0, 247, 0.3));
+	color: white;
+}
+
+.card.card-danger, .card-reveal.card-danger{
+	background-color: var(--danger-color);
+	color: white;
+}
+
+.card.card-danger-gr, .card-reveal.card-danger-gr{
+	background-color: var(--danger-color);
+	background-image: linear-gradient(to bottom right, #ff4747, rgba(255, 0, 247, 0.5));
+	color: white;
+}
+
+.card.card-success, .card-reveal.card-success{
+	background-color: var(--success-color);
+	color: white;
+}
+
+.card.card-success-gr, .card-reveal.card-success-gr{
+	background-color: var(--success-color);
+	background-image: linear-gradient(to bottom right, #34d465, rgba(0, 90, 255, 0.5));
+	color: white;
+}
+
+.card.card-dark, .card-reveal.card-dark{
+	background-color: var(--dark-color);
+	color: white;
+}

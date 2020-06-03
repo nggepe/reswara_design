@@ -29,7 +29,6 @@
 		</div>
 		<div class="topnav-left">
 			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
-			
 			<form class="saerch-nav-group">
 				<input type="text" class="search-navigation" placeholder="Search here...">
 			</form>
@@ -128,9 +127,9 @@
 			<li>
 				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a class="active" href="../pages/alert.html">Alert</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/button.html">Buttons</a></li>
-					<li class="sidebar-dropdown-item"><a href="../pages/button-group.html">Button group</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="../pages/button-group.html">Button group</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/cards.html">Cards</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/panels.html">Panels</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
@@ -152,83 +151,64 @@
 			</li>
 		</ul>
 	</div>
-	<div class="main-content row">
+	<div class="main-content">
+		<div class="row">
+			<div class="col-md-12 main-content-header-2">
+				<ul class="breadcrumb">
+				  	<li><a href="#">Reswara</a></li>
+				  	<li><a href="#">UI Component</a></li>
+				  	<li>Button</li>
+				  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
+				</ul>
+				<h1 class="main-content-title"><i class="ti ti-panel"></i> Buttons</h1>
+				<span>Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</span>
+			</div>
+		</div>
+
+		<div class="row px-3">
+			<div class="col-md-12">
+				<div class="panel">
+					<div class="panel-header">Button <b><u>Sizes</u></b>
+						<div class="float-right">
+							<button class="btn btn-panel btn-primary waves-effect waves-light btn-collapse-panel"></button>
+							<button class="btn btn-panel btn-warning waves-effect waves-light btn-maximize-panel"></button>
+							<button class="btn btn-panel btn-danger btn-dismiss-panel"></button>
+						</div>
+					</div>
+					<div class="panel-content">
+						<blockquote>
+							Size of button is here!
+						</blockquote>
+						<p><i>Button group</i> <code>btn-group</code></p>
+						<div class="v-spacing">
+							<div class="btn-group">
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Left</button>
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-lg btn-primary waves-effect waves-light">Right</button>
+							</div>
+						</div>
+						<div class="v-spacing">
+							<div class="btn-group">
+								<button class="btn btn-primary waves-effect waves-light">Left</button>
+								<button class="btn btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-primary waves-effect waves-light">Middle</button>
+								<button class="btn btn-primary waves-effect waves-light">Right</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
 		<div class="col-md-12 no-padding">
-			<div class="row">
-				<div class="col-md-12 main-content-header-2">
-					<ul class="breadcrumb">
-					  	<li><a href="#">Reswara</a></li>
-					  	<li><a href="#">UI Component</a></li>
-					  	<li>Alert</li>
-					  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
-					</ul>
-					<h1 class="main-content-title"><i class="ti ti-alert"></i> Alert</h1>
-					<span>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</span>
-				</div>
-			</div>
-			<div class="row px-3">
-				<div class="col-md-12">
-					<div class="panel">
-						<div class="panel-header">Default <b><i>alert</i></b>
-							<div class="float-right">
-								<button class="btn btn-panel btn-primary waves-effect waves-light btn-collapse-panel"></button>
-								<button class="btn btn-panel btn-warning waves-effect waves-light"></button>
-								<button class="btn btn-panel btn-danger"></button>
-							</div>
-						</div>
-						<div class="panel-content">
-							<blockquote>
-								Here, you can use alerts for your sites! with <code>class="alert"</code>
-							</blockquote>
-							<div class="alert alert-primary">
-								You have new challenge! come and clear it! <code>class="alert alert-primary"</code>
-							</div>
-							<div class="alert alert-info">
-								Your challange has changed! Please, check it! <code>class="alert alert-info"</code>
-							</div>
-							<div class="alert alert-success">
-								You have successfully break the issues! <code>class="alert alert-success"</code>
-							</div>
-							<div class="alert alert-dark">
-								Wow! It's not truly dark! <code>class="alert alert-dark"</code>
-							</div>
-							<div class="alert alert-light">
-								Where is the light? <code>class="alert alert-light"</code>
-							</div>
-							<div class="alert alert-warning">
-								Have you done with it? <code>class="alert alert-warning"</code>
-							</div>
-							<div class="alert alert-danger">
-								Oops! Stop your browser first! <code>class="alert alert-danger"</code>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="panel">
-						<div class="panel-header">Dismissable <b><i>alert</i></b>
-							<div class="float-right">
-								<button class="btn btn-panel btn-primary waves-effect waves-light btn-collapse-panel"></button>
-								<button class="btn btn-panel btn-warning waves-effect waves-light"></button>
-								<button class="btn btn-panel btn-danger"></button>
-							</div>
-						</div>
-						<div class="panel-content">
-							<blockquote>
-								You can also dismiss alert with <code>class="dismiss-alert"</code>
-							</blockquote>
-							<div class="alert alert-primary">
-								You have new challenge! come and clear it!
-								<button class="dismiss-alert waves-effect waves-light"><i class="ti ti-close"></i></button>
-							</div>
-							<div class="alert alert-danger">
-								Oops! Stop your browser first!
-								<button class="dismiss-alert waves-effect waves-light"><i class="ti ti-trash"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="main-footer">
 				2020 © ReswaraSangkara
 				<div class="btn-right">
@@ -271,4 +251,5 @@
 </html>
 
 <script type="text/javascript">
+
 </script>
