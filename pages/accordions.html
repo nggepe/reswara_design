@@ -29,6 +29,7 @@
 		</div>
 		<div class="topnav-left">
 			<a class="active"><span class="openbtn" onclick=""><i class="ti-unlock"></i></span></a>
+			
 			<form class="saerch-nav-group">
 				<input type="text" class="search-navigation" placeholder="Search here...">
 			</form>
@@ -127,10 +128,10 @@
 			<li>
 				<a class="sidebar-link sidebar-dropdown waves-effect waves-main active"><i class="ti-view-grid"></i> <span>UI Component</span></a>
 				<ul class="sidebar-dropdown-group">
-					<li class="sidebar-dropdown-item"><a href="../pages/accordions.html">Accordions</a></li>
+					<li class="sidebar-dropdown-item"><a class="active" href="../pages/accordions.html">Accordions</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/alert.html">Alert</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/buttons.html">Buttons</a></li>
-					<li class="sidebar-dropdown-item"><a class="active" href="../pages/button-group.html">Button group</a></li>
+					<li class="sidebar-dropdown-item"><a href="../pages/button-group.html">Button group</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/cards.html">Cards</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/panels.html">Panels</a></li>
 					<li class="sidebar-dropdown-item"><a href="../pages/hero.html">Hero</a></li>
@@ -152,62 +153,86 @@
 			</li>
 		</ul>
 	</div>
-	<div class="main-content">
-		<div class="row">
-			<div class="col-md-12 main-content-header-2">
-				<ul class="breadcrumb">
-				  	<li><a href="#">Reswara</a></li>
-				  	<li><a href="#">UI Component</a></li>
-				  	<li>Button</li>
-				  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
-				</ul>
-				<h1 class="main-content-title"><i class="ti ti-panel"></i> Buttons</h1>
-				<span>Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</span>
-			</div>
-		</div>
-
-		<div class="row px-3">
-			<div class="col-md-12">
-				<div class="panel">
-					<div class="panel-header">Button <b><u>Sizes</u></b>
-						<div class="float-right">
-							<button class="btn btn-panel btn-primary waves-effect waves-light btn-collapse-panel"></button>
-							<button class="btn btn-panel btn-warning waves-effect waves-light btn-maximize-panel"></button>
-							<button class="btn btn-panel btn-danger btn-dismiss-panel"></button>
-						</div>
-					</div>
-					<div class="panel-content">
-						<blockquote>
-							Size of button is here!
-						</blockquote>
-						<p><i>Button group</i> <code>btn-group</code></p>
-						<div class="v-spacing">
-							<div class="btn-group">
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Left</button>
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-lg btn-primary waves-effect waves-light">Right</button>
+	<div class="main-content row">
+		<div class="col-md-12 no-padding">
+			<div class="row">
+				<div class="col-md-12 main-content-header-2">
+					<ul class="breadcrumb">
+					  	<li><a href="#">Reswara</a></li>
+					  	<li><a href="#">UI Component</a></li>
+					  	<li>Card</li>
+					  	<li class="position-absolute pos-top-0 pos-right d-none d-sm-block time"></li>
+					</ul>
+					<h1 class="main-content-title"><i class="ti-notepad"></i> Card</h1>
+					<span>Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</span>
+				</div>
+				<div class="col-md-12 row px-3 py-3">
+					<div class="col-md-12">
+						<div class="panel">
+							<div class="panel-header">Default Card
+								<div class="float-right">
+									<button class="btn btn-panel btn-primary waves-effect waves-light btn-collapse-panel"></button>
+									<button class="btn btn-panel btn-warning waves-effect waves-light btn-maximize-panel"></button>
+									<button class="btn btn-panel btn-danger btn-dismiss-panel"></button>
+								</div>
+							</div>
+							<div class="panel-content row">
+								<div class="col-md-4">
+									<ul class="collapsible">
+										<li>
+											<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+											<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+										</li>
+										<li>
+											<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+											<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+										</li>
+										<li>
+											<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+											<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="v-spacing">
-							<div class="btn-group">
-								<button class="btn btn-primary waves-effect waves-light">Left</button>
-								<button class="btn btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-primary waves-effect waves-light">Middle</button>
-								<button class="btn btn-primary waves-effect waves-light">Right</button>
-							</div>
-						</div>
-
 					</div>
+					
+					<div class="col-md-4">
+						<div class="card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      	<img class="activator" src="../img/bg/arjuna.jpg">
+						    </div>
+						    <div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Default
+									<i class="material-icons right">more_vert</i>
+								</span>
+								<p><a href="https://materializecss.com/cards.html" target="_blank">From materialize</a></p>
+						    </div>
+					    	<div class="card-reveal">
+					      		<span class="card-title grey-text text-darken-4">Card Title
+					      			<i class="material-icons right">close</i>
+					      		</span>
+					      		<p><code>class="card-image"</code> to set up your image. <code> class="card-content"</code> for your card content. <code>class="class-reveal"</code> is here.</p>
+					    	</div>
+					  	</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+					        <div class="card-image">
+					          	<img src="../img/bg/arjuna.jpg">
+					          	<span class="card-title">Card Title</span>
+					          	<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+					        </div>
+					        <div class="card-content">
+					          	<p>Simple card materialize. 
+					          	<code>class="btn-floating halfway-fab"</code> to set up your button.</p>
+					        </div>
+					    </div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
-		
-		
 		
 		<div class="col-md-12 no-padding">
 			<div class="main-footer">
@@ -252,5 +277,7 @@
 </html>
 
 <script type="text/javascript">
-
+	$(document).ready(function(){
+	    $('.collapsible').collapsible();
+	});
 </script>
