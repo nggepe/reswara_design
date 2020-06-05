@@ -16,6 +16,8 @@
 @import url("reswara-card.css");
 @import url("reswara-accordion.css");
 @import url("reswara-tooltips.css");
+@import url("reswara-badges.css");
+@import url("reswara-typography.css");
 
 .v-spacing{
 	display: block;
