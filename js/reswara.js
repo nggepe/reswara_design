@@ -159,7 +159,7 @@ $(document).ready(function(){
     });
 
     $('.btn-dismiss-panel').click(function(){
-    	$(this).parent().parent().parent().slideUp(100);
+    	$(this).parent().parent().parent().hide({direction: "right", easing: 'swing', duration: 200});
     });
 
     $('.btn-maximize-panel').click(function(){
