@@ -65,22 +65,22 @@ li.mini:hover .sidebar-dropdown-group::before{
 	position: fixed;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: linear-gradient(to right, #3f4067, #3f4067);
+	background-image: linear-gradient(to right, #474871, #474871);
 }
 li.mini > .sidebar-dropdown-group>li>a{
-	background-image: linear-gradient(to right, #3f4067, #3f4067);
+	background-image: linear-gradient(to right, #3f4067, #474871);
 }
 li.mini a.active{
 	color: #ffffff;
 	border-radius: 0px 0px 0px 0px;
 	border-left: none;
-	background-image: var(--sidebar-bg-color-a-hover);
+	background-image: linear-gradient(to right, #483465, #474871);
 	padding-left: 16px;
 }
 li.mini a:hover{
 	color: #ffffff;
 	border-radius: 0px 0px 0px 0px;
-	background-image: var(--sidebar-bg-color-a-hover);
+	background-image: linear-gradient(to right, #483465, #474871);
 }
 
 .sidebar span {
