@@ -5,6 +5,7 @@
     line-height: 1.6;
     border-radius: 5px;
     height: auto;
+    vertical-align: middle;
 }
 button:disabled{
 	pointer-events: all!important;

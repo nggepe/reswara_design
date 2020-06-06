@@ -5,6 +5,7 @@
     line-height: 1;
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.1);
     padding: 0px;
+    width: auto;
 }
 h1>.badge, h2>.badge, h3>.badge, h4>.badge, h5>.badge, h6>.badge{
 	position: absolute;
@@ -74,5 +75,16 @@ h5>.badge{
 }
 
 .btn > .badge{
-
+	padding: 0px 5px!important;
+	border-radius: 3px;
+	min-width: 12px!important;
+	/*min-height: 8px!important;*/
+	height: auto!important;
+	display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+	vertical-align: middle;
+	font-weight: 600;
+	font-size: 75%;
+	margin-right: 0px;
 }
