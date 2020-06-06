@@ -86,7 +86,9 @@ $(document).ready(function(){
 		else{
 			$(this).addClass('active');
 			if ($(this).hasClass('sidebar-dropdown')) {
-				$(this).next().slideDown(200).addClass("active");
+				if (sidebarShowing!="mini") {
+					$(this).next().slideDown(200).addClass("active");
+				}
 			}
 		}
 	});
