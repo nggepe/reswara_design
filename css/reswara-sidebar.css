@@ -43,7 +43,7 @@
 	background-image: var(--sidebar-bg-color-a-hover);
 }
 
-li.mini:hover .sidebar-dropdown-group{
+li.mini:hover > .sidebar-dropdown-group{
 	display: block!important;
 	min-width: 200px;
 	position: fixed;
@@ -52,6 +52,12 @@ li.mini:hover .sidebar-dropdown-group{
     z-index: 11!important;
     vertical-align: middle;
 }
+
+li.mini:hover > a{
+	border-radius: 0px 0px 0px;
+	background-image: var(--sidebar-bg-color-a-hover);
+}
+
 li.mini:hover .sidebar-dropdown-group::before{
 	content: " ";
 	display: block;
@@ -65,23 +71,21 @@ li.mini:hover .sidebar-dropdown-group::before{
 	position: fixed;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: linear-gradient(to right, #474871, #474871);
+	background-image: linear-gradient(to right, #3f4067, #3f4067);
 }
 li.mini > .sidebar-dropdown-group>li>a{
-	background-image: linear-gradient(to right, #3f4067, #474871);
+	border-radius: 0px 0px 0px 0px;
+	background-image: linear-gradient(to right, #3f4067, #474871)!important;
 }
-li.mini a.active{
+
+li.mini > a.active{
 	color: #ffffff;
 	border-radius: 0px 0px 0px 0px;
 	border-left: none;
-	background-image: linear-gradient(to right, #483465, #474871);
+	background-image: var(--sidebar-bg-color-a-hover);
 	padding-left: 16px;
 }
-li.mini a:hover{
-	color: #ffffff;
-	border-radius: 0px 0px 0px 0px;
-	background-image: linear-gradient(to right, #483465, #474871);
-}
+
 
 .sidebar span {
 	margin-left: 15px;
