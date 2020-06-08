@@ -2,14 +2,15 @@
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	z-index: 9;
+	z-index: 8;
 	top: 0;
 	left: 0;
+	overflow-y: auto;
 	
 	background-image: var(--sidebar-bg-color);
-	overflow-x: hidden;
 	scrollbar-width: thin;
 	transition: 0.2s;
+	margin-bottom: 0;
 }
 
 
@@ -46,10 +47,9 @@
 li.mini:hover > .sidebar-dropdown-group{
 	display: block!important;
 	min-width: 200px;
-	position: fixed;
+	position: absolute;
 	margin-top: -37px;
 	left:70px;
-    z-index: 11!important;
     vertical-align: middle;
 }
 
@@ -63,15 +63,15 @@ li.mini:hover .sidebar-dropdown-group::before{
 	display: block;
 	min-width: 10px;
 	height: 37px;
-	margin-top: -32.5px;
-	left:60px;
-    z-index: 11!important;
+	
+	margin-left: -10px;
     width: 10px!important;
 
-	position: fixed;
+	position: absolute;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	background-image: linear-gradient(to right, #3f4067, #3f4067);
+	overflow: hidden;
 }
 li.mini > .sidebar-dropdown-group>li>a{
 	border-radius: 0px 0px 0px 0px;
@@ -202,6 +202,11 @@ li.mini > a.active{
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     transform: rotate(90deg);
+}
+
+.mini-side-bar{
+	position: absolute;
+	overflow-y: unset;
 }
 
 .mini-side-bar a{

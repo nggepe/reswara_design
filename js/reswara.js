@@ -31,6 +31,7 @@ $(document).ready(function(){
 	    }
 
 	});
+
 	
 	$('body').attr('class','loaded');
 	$('.progress-bar-pre.progress-bar-primary').attr("style", "width:100%;");
@@ -284,6 +285,7 @@ function navStarted(btnstat){
 			$('.main-content').attr('style','margin-left: 60px; margin-top: 0px;');
 			$('.sidebar-search').attr('style', 'display:none;');
 			$('.sidebar-search-group').slideUp(200).removeClass('active');
+			$(".sidebar").height($('body').height());
 		}
 	}
 }
