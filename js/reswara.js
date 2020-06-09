@@ -5,10 +5,9 @@ var btnstat_ = "close";
 var sidebarShowing = "big";
 
 
-var xmedia = window.matchMedia("(max-width: 700px)");
+var xmedia = window.matchMedia("(max-width: 900px)");
 navStart(xmedia);
 xmedia.addListener(navStart);
-
 
 $(document).ready(function(){
 	$(document).mouseup(function(e) 
@@ -31,7 +30,7 @@ $(document).ready(function(){
 	    }
 
 	});
-
+	
 	
 	$('body').attr('class','loaded');
 	$('.progress-bar-pre.progress-bar-primary').attr("style", "width:100%;");
@@ -223,6 +222,8 @@ window.onbeforeunload = function(e) {
 };
 
 function navStarted(btnstat){
+	var wheight = $(window).height()-120;
+	var windowheight = $('body').height();
 	if (btnstat=="open") {
 		
 		btnstat_ = 'close';
@@ -250,7 +251,8 @@ function navStarted(btnstat){
 		else{
 			$('.sidebar').attr('style', 'width:250px;');
 			main[0].style.marginLeft = "250px";
-			$('.main-content').attr('style','margin-left: 250px;');
+			$('.main-content').attr('style','margin-left: 250px; margin-top: 0px; min-height: '+wheight+'px;');
+			$('footer').attr('style', 'margin-left: 250px;');
 			$('.openbtn').find('i').attr('class', 'ti-unlock');
 			$('.sidebar-link').parent().removeClass('mini');
 		}
@@ -273,7 +275,8 @@ function navStarted(btnstat){
 		if (xmedia.matches) {
 			$('.sidebar').attr('style', 'width:0px;');
 			main[0].style.marginLeft= "0px";
-			$('.main-content').attr('style','margin-left: 0px; margin-top: 0px;');
+			$('.main-content').attr('style','margin-left: 0px; margin-top: 0px; min-height: '+wheight+'px;');
+			$('footer').attr('style', 'margin-left: 0px;');
 			$('.openbtn').find('i').attr('class', 'ti-lock');
 		}
 		else{
@@ -282,10 +285,11 @@ function navStarted(btnstat){
 			$('.openbtn').find('i').attr('class', 'ti-lock');
 			
 			main[0].style.marginLeft= "60px";
-			$('.main-content').attr('style','margin-left: 60px; margin-top: 0px;');
+			$('.main-content').attr('style','margin-left: 60px; margin-top: 0px; min-height: '+wheight+'px;');
+			$('footer').attr('style', 'margin-left: 60px;');
 			$('.sidebar-search').attr('style', 'display:none;');
 			$('.sidebar-search-group').slideUp(200).removeClass('active');
-			$(".sidebar").height($('body').height());
+			$(".sidebar").height(windowheight);
 		}
 	}
 }

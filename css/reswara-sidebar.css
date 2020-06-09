@@ -44,13 +44,34 @@
 	background-image: var(--sidebar-bg-color-a-hover);
 }
 
+li.mini:hover>a{
+	overflow: unset;
+}
+
+
 li.mini:hover > .sidebar-dropdown-group{
 	display: block!important;
 	min-width: 200px;
 	position: absolute;
-	margin-top: -37px;
-	left:70px;
+	margin-top: -0px;
+	left: 80px;
     vertical-align: middle;
+}
+
+li.mini:hover > a > span{
+	display: block!important;
+	min-width: 200px;
+	position: absolute;
+	z-index: inherit;
+	margin-top: -29px;
+	font-family: SquadaOne-Regular;
+	height: 37.5px;
+	font-size: 16px;
+	padding-top: 7.5px;
+	color: black;
+	left: 65px;
+    vertical-align: middle;
+    background-image: linear-gradient(to right, #3f4067, #474871)!important;
 }
 
 li.mini:hover > a{
@@ -58,21 +79,23 @@ li.mini:hover > a{
 	background-image: var(--sidebar-bg-color-a-hover);
 }
 
-li.mini:hover .sidebar-dropdown-group::before{
-	content: " ";
+li.mini:hover > a > span::before{
+	content: "";
 	display: block;
-	min-width: 10px;
-	height: 37px;
 	
-	margin-left: -10px;
-    width: 10px!important;
+	margin-left: -20px;
 
 	position: absolute;
-	margin-top: 0px;
+	margin-top: -7.5px;
 	margin-bottom: 0px;
-	background-image: linear-gradient(to right, #3f4067, #3f4067);
 	overflow: hidden;
+	z-index: 5;
+	background-color: #3f4067;
+	
+	height: 37px;
+	width: 20px;
 }
+
 li.mini > .sidebar-dropdown-group>li>a{
 	border-radius: 0px 0px 0px 0px;
 	background-image: linear-gradient(to right, #3f4067, #474871)!important;
